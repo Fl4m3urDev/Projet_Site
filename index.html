@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/png" href="icons/Symbole_Japonais.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Test de la page</title>
+</head>
+
+<body onload=randomImgLoad()>
+    <center>
+        <h1 class="title1">Un Titre Sans Nom</h1>
+    </center>
+    <div class="style1">
+        <h1>Test</h1>
+        <ul>
+            <li class=li1>Premier</li>
+            <li class=li2>Deuxième</li>
+            <li class=li3>Troisième</li>
+        </ul>
+    </div>
+
+    <br>
+
+    <div class="block1">
+        <table border=2>
+            <tr class="styletableau1">
+                <td colspan="2">Sexe :</td>
+                <td rowspan="1"><em>Illustration :</em></td>
+            </tr>
+            <tr class="styletableau2">
+                <th>mec</th>
+                <th>simpson</th>
+                <td><img class="rotate" src="images/Ralph_Wiggum.png" alt="mec simpson" width="200" height="200"></td>
+            </tr>
+            <tr class="styletableau1">
+                <th>meuf</th>
+                <th>sexy</th>
+                <td><img onclick=ChangeImgClick() id="imggirl" src="images/anime_girls_sexy.png" alt="meuf sexy" width="200" height="200"></td>
+            </tr>
+        </table>
+    </div>
+
+    <br>
+
+    <div class="flex-container1">
+        <img src="images/Ciel_Rouge.jpg" id="photo1" alt="Ciel Rouge" width="300px" height="150px"
+            style="border-style: solid; border-width: 10px;">
+        <img src="images/Ciel_Bleu.jpg" id="photo2" alt="Ciel Bleu" width="300px" height="150px"
+            style="border-style: solid; border-width: 10px;">
+        <img src="images/Ciel_Rose.jpg" id="photo3" alt="Ciel Rose" width="300px" height="150px"
+            style="border-style: solid; border-width: 10px;">
+    </div>
+
+    <br>
+
+    <div class=style2>
+        <form name="frmCalcul" class="flex-container2">
+            <p>Opérande 1 :</p><input class="container1" id="txtOper1" type="text" name="txtOper1" size="10" maxlength="5">
+            <p>Opérande 2 :</p><input class="container2" id="txtOper2" type="text" name="txtOper2" size="10" maxlength="5">
+            <input type="button" value="Somme" name="btSomme" onclick="somme('txtOper1','txtOper2')">
+        </form>
+    </div>
+
+    <br>
+
+    <footer id="animationcolor">
+        <h2>Animation de couleur en arrière plan + les images qui font peur !</h2>
+        <img src="images/beetlejuice.png" id="img1" alt="Beetlejuice" width="200" height="200">
+        <img src="images/Flandre_Scarlet.png" id="img2" alt="FlandreScarlet" width="200" height="200">
+        <img src="images/The_Exortist_Screamer.png" id="img3" alt="The Exortist Screamer" width="200" height="200">
+        <img src="images/Zombatar_1.jpg" id="img4" alt="Zombatar1" width="200" height="200">
+    </footer>
+
+    <br>
+
+    <div class="container3">
+        <a href="https://fr.wikipedia.org/wiki/Jardin_japonais" target="_blank">
+        <img src="images/PaysageJap1.jpg" id="photo4" alt="Paysage Japonais 1" width="400px" height="200px" style="border-style: groove; border-width: 1em; border-color: rgb(153, 0, 0);"></a>
+    </div>
+
+    <br>
+
+    <div class=style3>
+        <p>Voici un petit jeu à la con ! :)</p>
+        <h1 onclick="lien(this);">Cliquez !</h1>
+    </div>
+
+    <br>
+
+    <div class=style4>C'est tout</div>
+
+    <script>
+        const getRandomColor = () => {
+            const h = getRandomInt(360);
+            const s = getRandomInt(100);
+            const l = getRandomInt(100);
+
+            return `hsl(${h}deg, ${s}%, ${l}%)`;
+        };
+
+        const setBackgroundColor = () => {
+            var background = document.getElementById("animationcolor");
+            const randomColor = getRandomColor();
+            background.style.backgroundColor = randomColor;
+            background.style.color = randomColor;
+        };
+
+        setBackgroundColor();
+
+        setInterval(() => {
+            setBackgroundColor();
+        }, 1500);
+    </script>
+</body>
+
+</html>
