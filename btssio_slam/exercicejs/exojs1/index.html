@@ -1,0 +1,50 @@
+<html>
+<head>
+<title>Saisie de noms et affichage dans une liste ordonnée</title>
+</head>
+<body>
+<H1>Exemple de boucles</H1>
+<p>Entrez une série de noms. Terminez la saisie en cliquant sur Annuler
+dans la boîte message.
+Les noms seront alors affichés dans une liste ordonnée.
+</p>
+<H2>Liste des noms </H2>
+<ol id="liste">
+</ol>
+<p id="resultat">
+</p>
+<script language="javascript">
+// à compléter par la saisie de noms, l'affichage des noms saisis
+// dans une liste numérotée et le nombre de noms saisis
+</script>
+<script>
+    /*var prenom;
+    var i=1;
+    
+    do{
+      i++;
+      prenom = prompt("Entrez un nom");
+      console.log(prenom);
+      console.log(i);
+    }
+    while(prenom != null);*/
+
+    var nom, cpt = 0;
+    do {
+      nom = prompt("Entrez un nom : ", "");
+      if ((nom != null) && (nom != '')) {
+        //document.getElementById('liste').innerHTML += "<li>"+ nom +"</li>";
+        var oLi = document.createElement("li"); // on crée un nouveau noeud li
+        var oText = document.createTextNode(nom); // on crée un noeud texte
+        oLi.appendChild(oText); // on attache le noeud texte au noeud li
+        document.getElementById('liste').appendChild(oLi); // on attache le noeud li noeud liste
+        cpt++;//on increment le compteur
+      }
+    }
+    while (nom != null);//condition du do
+    var fin = document.createTextNode("Vous avez saisi " + cpt + " noms.");
+    document.getElementById('resultat').appendChild(fin);
+
+        </script>
+</body>
+</html>

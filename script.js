@@ -81,12 +81,12 @@ function randomImgLoad(){
 
     var lTab = tabImg.length-1;
 
-   document.getElementById('photo1').src = tabImg[getRandomInt(max)];
-   document.getElementById('photo2').src = tabImg[getRandomInt(max)];
-   document.getElementById('photo3').src = tabImg[getRandomInt(max)];
+   document.getElementById('Photo_Ciel_Rouge').src = tabImg[getRandomInt(max)];
+   document.getElementById('Photo_Ciel_Bleu').src = tabImg[getRandomInt(max)];
+   document.getElementById('Photo_Ciel_Rose').src = tabImg[getRandomInt(max)];
 }
 
 function lien(elem) {
-    var reponse = prompt("Veuillez saisir un nom !");
+    var reponse = prompt("Veuillez saisir un truc !");
     elem.innerHTML = reponse;
    }

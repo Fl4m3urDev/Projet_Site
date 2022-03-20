@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>TP 7</title>
+    </head>
+    <body>
+<div><img src="image008.gif" alt="ampoule éteinte" onclick="conditionimage(this);">
+    <img src="image009.gif" alt="ampoule allumé" onclick="conditionimage(this);"> 
+    <img src="image008.gif" alt="ampoule éteinte" onclick="conditionimage(this);">
+    <img src="image009.gif" alt="ampoule allumé" onclick="conditionimage(this);"></div>
+        <script>
+            function conditionimage(elem) {
+            var chemin = elem.src.substr(-12);
+            console.log(chemin)
+                if (chemin == "image009.gif"){
+                elem.src = "image008.gif";
+                }
+                else  { elem.src = "image009.gif";
+                console.log("else")
+                }
+            }
+        </script>
+    </body>
+</html>

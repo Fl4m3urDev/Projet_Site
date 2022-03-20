@@ -6,16 +6,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="icon" type="image/png" href="icons/Symbole_Japonais.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
     <title>Test de la page</title>
 </head>
 
 <body onload=randomImgLoad()>
-    <center>
-        <h1 class="title1">Un Titre Sans Nom</h1>
-    </center>
-    <div class="style1">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" alt="Avatar Logo" style="width:40px;" class="rounded-pill">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="btssio_slam/index.html" target="_blank">BTS SIO</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown">Histoire</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Jeux-Vidéo</a></li>
+                            <li><a class="dropdown-item" href="#">Informatique</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown">Projet</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Podcast</a></li>
+                            <li><a class="dropdown-item" href="#">La Balade Relaxante</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Autre Part...</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <br>
+
+    <h1 class="titredebut">Un Titre Sans Nom</h1>
+
+    <br>
+
+    <div class="style_container_test">
         <h1>Test</h1>
         <ul>
             <li class=li1>Premier</li>
@@ -26,43 +70,47 @@
 
     <br>
 
-    <div class="block1">
+    <div class="container_tableau">
         <table border=2>
-            <tr class="styletableau1">
-                <td colspan="2">Sexe :</td>
+            <tr class="style_tableau_main">
+                <td colspan="2">Sexe et Type:</td>
                 <td rowspan="1"><em>Illustration :</em></td>
             </tr>
-            <tr class="styletableau2">
+            <tr class="style_tableau_m">
                 <th>mec</th>
                 <th>simpson</th>
                 <td><img class="rotate" src="images/Ralph_Wiggum.png" alt="mec simpson" width="200" height="200"></td>
             </tr>
-            <tr class="styletableau1">
+            <tr class="style_tableau_f">
                 <th>meuf</th>
                 <th>sexy</th>
-                <td><img onclick=ChangeImgClick() id="imggirl" src="images/anime_girls_sexy.png" alt="meuf sexy" width="200" height="200"></td>
+                <td><img onclick=ChangeImgClick() id="imggirl" src="images/anime_girls_sexy.png" alt="meuf sexy"
+                        width="200" height="200"></td>
             </tr>
         </table>
     </div>
 
     <br>
 
-    <div class="flex-container1">
-        <img src="images/Ciel_Rouge.jpg" id="photo1" alt="Ciel Rouge" width="300px" height="150px"
-            style="border-style: solid; border-width: 10px;">
-        <img src="images/Ciel_Bleu.jpg" id="photo2" alt="Ciel Bleu" width="300px" height="150px"
-            style="border-style: solid; border-width: 10px;">
-        <img src="images/Ciel_Rose.jpg" id="photo3" alt="Ciel Rose" width="300px" height="150px"
-            style="border-style: solid; border-width: 10px;">
+    <div class="flex_premier_container">
+        <img src="images/Ciel_Rouge.jpg" id="Photo_Ciel_Rouge" alt="Ciel Rouge" width="300px" height="150px"
+            style="border-style: solid; border-width: 10px; color: black;">
+        <img src="images/Ciel_Bleu.jpg" id="Photo_Ciel_Bleu" alt="Ciel Bleu" width="300px" height="150px"
+            style="border-style: solid; border-width: 10px; color: black;">
+        <img src="images/Ciel_Rose.jpg" id="Photo_Ciel_Rose" alt="Ciel Rose" width="300px" height="150px"
+            style="border-style: solid; border-width: 10px; color: black;">
     </div>
 
     <br>
 
-    <div class=style2>
-        <form name="frmCalcul" class="flex-container2">
-            <p>Opérande 1 :</p><input class="container1" id="txtOper1" type="text" name="txtOper1" size="10" maxlength="5">
-            <p>Opérande 2 :</p><input class="container2" id="txtOper2" type="text" name="txtOper2" size="10" maxlength="5">
-            <input type="button" value="Somme" name="btSomme" onclick="somme('txtOper1','txtOper2')">
+    <div class="style_container_frm">
+        <form name="frmCalcul" class="flex-containercalcul">
+            <p>Opérande 1 :</p><input class="containercalcul" id="txtOper1" type="text" name="txtOper1" size="10"
+                maxlength="5">
+            <p>Opérande 2 :</p><input class="containercalcul" id="txtOper2" type="text" name="txtOper2" size="10"
+                maxlength="5">
+            <input class="containersomme" type="button" value="Somme" name="btSomme"
+                onclick="somme('txtOper1','txtOper2')">
         </form>
     </div>
 
@@ -78,21 +126,26 @@
 
     <br>
 
-    <div class="container3">
+    <div class="flex_deuxieme_container">
         <a href="https://fr.wikipedia.org/wiki/Jardin_japonais" target="_blank">
-        <img src="images/PaysageJap1.jpg" id="photo4" alt="Paysage Japonais 1" width="400px" height="200px" style="border-style: groove; border-width: 1em; border-color: rgb(153, 0, 0);"></a>
+            <img src="images/PaysageJap1.jpg" id="Photo_PaysageJap" alt="Paysage Japonais 1" width="400px"
+                height="200px" style="border-style: groove; border-width: 1em; border-color: rgb(153, 0, 0);"></a>
     </div>
 
     <br>
 
-    <div class=style3>
+    <div class="style_container_jeu">
         <p>Voici un petit jeu à la con ! :)</p>
         <h1 onclick="lien(this);">Cliquez !</h1>
     </div>
 
     <br>
 
-    <div class=style4>C'est tout</div>
+    <p class="text_comingsoon"><strong>Coming Soon...</strong></p>
+
+    <br>
+
+    <div class=style_container_piedpage>C'est tout</div>
 
     <script>
         const getRandomColor = () => {

@@ -1,0 +1,14 @@
+body{
+    background-image: url(../images/Paysage_Bleu.png);
+    background-repeat: no-repeat;
+    background-size: 1700px 700px;
+}
+
+.style_container_premier{
+    background: linear-gradient(rgb(255, 238, 0), rgb(255, 0, 0));
+    padding: 10px;
+}
+
+@media screen {
+/*coming soon*/
+}

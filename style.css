@@ -1,25 +1,27 @@
 body{
-    background-image: url(images/Stalker_AN.png);
+    background-image: url(../Projet_Site/images/Stalker_AN.png);
     background-repeat: no-repeat;
     background-position: 0%;
-    background-size: 1700px 1920px;
+    background-size: 1700px 1900px;
 }
 
-.title1{
-    margin-left: 16em;
-    margin-right: 16em;
+.titredebut{
+    margin-left: 34%;
+    margin-right: 34%;
     background-color: deepskyblue;
     border-style: solid;
     color: black;
     text-align: center;
+    font-family: 'Comic Sans MS', sans-serif;
 }
 
-.style1{
+.style_container_test{
     background-color: red;
     border-style: solid;
     padding-left: 10px;
     margin-right: 12%;
     margin-left: 12%;
+    font-family: 'Calibri', serif;
 }
 
 ul{
@@ -42,12 +44,12 @@ ul{
     color: rgb(9, 190, 9);
 }
 
-.block1{
+.container_tableau{
     margin-left: 2%;
     margin-right: 2%;
 }
 
-table {
+table{
     font-family: arial, sans-serif;
     border-collapse: collapse;
     margin-right: 10%;
@@ -55,13 +57,13 @@ table {
     width: 80%;
 }
 
-td, th {
+td, th{
     border: 1px solid #e45411;
     text-align: left;
     padding: 8px;
 }
 
-.styletableau1 {
+.style_tableau_main, .style_tableau_f{
     background-color: lightblue;
 }
 
@@ -72,11 +74,11 @@ td, th {
     transform: rotate(-360deg);
 }
 
-.styletableau2{
+.style_tableau_m{
     background-color: lightgreen;
 }
 
-.flex-container1{
+.flex_premier_container{
     margin-left: 80px;
     margin-right: 80px;
     display: flex;
@@ -109,9 +111,9 @@ td, th {
 }
 
 
-.style2{
-    margin-left: 33%;
-    margin-right: 33%;
+.style_container_frm{
+    margin-left: 27%;
+    margin-right: 27%;
     padding-top: 10px;
     padding-bottom: 10px;
     background-color: gold;
@@ -120,19 +122,22 @@ td, th {
     text-align: center;
 }
 
-.flex-container2{
+.flex-containercalcul{
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
+    margin-top: 10px;
 }
 
-.container1{
+.containercalcul{
+    margin-bottom: 10px;
     margin-right: 10px;
+    margin-left: 10px;
 }
 
-.container2{
-    margin-right: 10px;
+.containersomme{
+    margin-bottom: 10px;
 }
 
 #animationcolor{
@@ -150,21 +155,21 @@ h2{
     transition: color 1s;
 }
 
-.container3{
+.flex_deuxieme_container{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
     align-self: center;
 }
 
-#photo4:hover{
+#Photo_PaysageJap:hover{
 	-webkit-filter: blur(5px);
 	filter: blur(5px);
 	-webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
 }
 
-.style3{
+.style_container_jeu{
     background-color: orange;
     border-radius: 80px;
     border-style: solid;
@@ -177,13 +182,27 @@ h2{
     text-align: center;
 }
 
-.style4{
+.style_container_piedpage{
     background-color: black;
-    margin-left: -8px;
-    margin-right: -8px;
     margin-bottom: -8px;
     padding: 50px;
     color: white;
     text-align: center;
     font-size: 40px;
+}
+
+.text_comingsoon{
+    background-color:rgb(238, 255, 0);
+    border-style: groove;
+    border-color: cyan;
+    margin-left: 100px;
+    margin-right: 100px;
+    color: rgb(255, 0, 0);
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+@media screen {
+    /*coming soon*/
 }

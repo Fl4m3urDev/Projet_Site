@@ -1,0 +1,49 @@
+<html>
+<head>
+<title>Formulaire somme v2</title>
+</head>
+<!--La somme est toujours calculée par clic sur le bouton Somme,
+mais le résultat est affiché directement dans le formulaire.
+De plus, un message d'erreur apparaît si au moins un des opérandes
+n'est pas renseigné.
+Idem si au moins un des opérandes n'est pas numérique.
+Nécessité d'écrire une fonction regroupant le traitement, à définir
+dans l'entête du document, délimité par le début et fin de balise SCRIPT.
+Autres ajouts :
+• Focus affecté par défaut sur la 1ère zone de texte.
+• Validation de l'effacement des zones de texte en traitant l'événement onReset sur le
+formulaire.
+Pour tester si une chaîne de caractère n’est pas un nombre vous utiliserez la fonction isNaN
+(is Not a Number)-->
+<body onLoad="document.frmCalcul.txtOper1.focus()">
+    <form name="frmCalcul" onReset="return ValideReset()">
+    Opérande 1 : <input type="text" name="txtOper1" id="txtOper1" size="10"
+    maxlength="5">
+    Opérande 2 : <input type="text" name="txtOper2" id="txtOper2" size="10"
+    maxlength="5">
+    <br>
+    <input type="button" value="Somme" name="btSomme" id="Somme"
+    onClick="AffecteSomme()">
+    <input type="reset" value="Annuler" name="brAnnuler">
+    Résultat : <input type="text" name="txtResult" id=txtResult readonly size="20"
+    maxlength="5">
+    </form>
+    <script>
+function AffecteSomme() {
+        var txtOper1, txtOper2, Somme, txtResult;
+            txtOper1 = Number(document.getElementById("txtOper1").value);
+            txtOper2 = Number(document.getElementById("txtOper2").value);
+            Somme = txtOper1 + txtOper2;
+            document.getElementById("txtResult").value = ValideReset(Somme);
+    }
+function ValideReset(Somme) {
+if (!isNaN(Somme)){
+    return Somme;
+}
+    else{
+    return 'Erreur';  
+    }
+}
+    </script>
+    </body>
+</html>
