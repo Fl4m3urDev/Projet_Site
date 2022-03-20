@@ -3,7 +3,7 @@ window.addEventListener('load', function (){
 });
 
 const max = 3;
-const click = 21;
+const click = 32;
 
 var time = new Date().getHours();
 if (time < 7) {
