@@ -9,6 +9,26 @@ body{
     padding: 10px;
 }
 
+.style_container_deuxieme{
+    display: flex;
+    flex-direction: column;
+    background-color: darkblue;
+    border-radius: 50px;
+    border-style: solid;
+    margin-left: 40%;
+    margin-right: 40%;
+    padding: 20px;
+    text-align: center;
+}
+
+.style_JSDialog{
+    margin-top: 20px;
+}
+
+.style_PHPDialog{
+    margin-top: 100px;
+}
+
 @media screen {
 /*coming soon*/
 }
