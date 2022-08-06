@@ -1,0 +1,16 @@
+/* Premier Titre */
+
+.premier_titre {
+    margin: 20%;
+    margin-left: 38%;
+    margin-right: 38%;
+    background-color: rgb(238, 255, 0);
+    border-style: groove;
+    border-color: cyan;
+    color: rgb(255, 0, 0);
+    font-size: 30px;
+    font-family: 'Comic Sans MS', sans-serif;
+    text-align: center;
+}
+
+/***************************************************************************************************************/
