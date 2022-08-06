@@ -1,21 +1,39 @@
+// Test fonction JS
+
 window.addEventListener('load', function () {
     console.log('Cette fonction est éxécutée une fois quand la page est chargée.');
 });
 
+/***************************************************************************************************************/
+
+// Constante pour la fonction de "positionnement aléatoire des images des beaux ciel"
+
 const max = 3;
+
+/***************************************************************************************************************/
+
+// Boîte de dialogue de Bienvenue (Heure Fixe) 
 
 var time = new Date().getHours();
 if (time < 7) {
-    window.alert("Bonne nuit et Bienvenue Test !");
+    window.alert("Bonne nuit et Bienvenue !");
 } else if (time < 18) {
-    window.alert("Bonjour et Bienvenue Test !");
+    window.alert("Bonjour et Bienvenue !");
 } else {
-    window.alert("Bonsoir et Bienvenue Test !");
+    window.alert("Bonsoir et Bienvenue !");
 }
+
+/***************************************************************************************************************/
+
+// Fonction permetttant de retourner un nombre flottant pseudo-aléatoire compris dans l'intervalle [0, 1[
 
 function getRandomInt(max) {
     return Math.floor(Math.random() * max);
 }
+
+/***************************************************************************************************************/
+
+// Fonction permettant de changer l'image de la 'femme japonaise" en un clic et ainsi de suite...
 
 function ChangeImgClick() {
     var Image_Id = document.getElementById('imggirl');
@@ -114,6 +132,10 @@ function ChangeImgClick() {
     }
 }
 
+/***************************************************************************************************************/
+
+// Fonction permettant de faire le calcul d'une addition...
+
 function somme(input1, input2) {
 
     var operande1 = document.getElementById(input1).value;
@@ -124,6 +146,10 @@ function somme(input1, input2) {
         alert("Résultat : " + somme);
     }
 }
+
+/***************************************************************************************************************/
+
+// Fonction permettant de charger les images des beaux ciel
 
 function randomImgLoad() {
     var tabImg = new Array();
@@ -138,7 +164,13 @@ function randomImgLoad() {
     document.getElementById('Photo_Ciel_Rose').src = tabImg[getRandomInt(max)];
 }
 
+/***************************************************************************************************************/
+
+// Fonction permettant de changer le texte en n'importe quoi (sous-entendu une chaîne de caractère !)
+
 function lien(elem) {
     var reponse = prompt("Veuillez saisir un truc !");
     elem.innerHTML = reponse;
 }
+
+/***************************************************************************************************************/

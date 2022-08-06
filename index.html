@@ -16,6 +16,9 @@
 </head>
 
 <body onload=randomImgLoad()>
+
+    <!-- Barre de Navigation -->
+
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">
@@ -54,20 +57,26 @@
 
     <br>
 
-    <h1 class="titredebut">Un Titre Sans Nom</h1>
+    <!-- Premier Titre -->
+
+    <h1 class="premier_titre">Un Titre Sans Nom</h1>
 
     <br>
+
+    <!-- Le "Bloc Test" avec des animations de couleur lors du passage à la souris -->
 
     <div class="style_container_test">
         <h1>Test</h1>
         <ul>
-            <li class=li1>Premier</li>
-            <li class=li2>Deuxième</li>
-            <li class=li3>Troisième</li>
+            <li class=li_premier>Premier</li>
+            <li class=li_deuxième>Deuxième</li>
+            <li class=li_troisième>Troisième</li>
         </ul>
     </div>
 
     <br>
+
+    <!-- Le "Bloc Tableau" contient le "Sexe et Type" et l'illustration avec une image "simpson" animée + diaporama de clics sur la photo d'une femme japonaise -->
 
     <div class="container_tableau">
         <table border=2>
@@ -91,6 +100,8 @@
 
     <br>
 
+    <!-- Le "Bloc Image Aléatoire" contient le positionnement aléatoire des images des beaux ciel -->
+
     <div class="flex_premier_container">
         <img src="images/Ciel_Rouge.jpg" id="Photo_Ciel_Rouge" alt="Ciel Rouge" width="300px" height="150px"
             style="border-style: solid; border-width: 10px; color: black;">
@@ -100,30 +111,37 @@
             style="border-style: solid; border-width: 10px; color: black;">
     </div>
 
+    <!-- Le "Bloc Calcul" contient un formulaire d'une addition à résoudre ouvrant une boîte de dialogue montrant le résultat de l'addition effectué -->
+
     <br>
 
     <div class="style_container_frm">
-        <form name="frmCalcul" class="flex-containercalcul">
-            <p>Opérande 1 :</p><input class="containercalcul" id="txtOper1" type="text" name="txtOper1" size="10"
+        <form name="frmCalcul" class="flex_container_calcul">
+            <p>Opérande 1 :</p><input class="container_calcul" id="txtOper1" type="text" name="txtOper1" size="10"
                 maxlength="5">
-            <p>Opérande 2 :</p><input class="containercalcul" id="txtOper2" type="text" name="txtOper2" size="10"
+            <p>Opérande 2 :</p><input class="container_calcul" id="txtOper2" type="text" name="txtOper2" size="10"
                 maxlength="5">
-            <input class="containersomme" type="button" value="Somme" name="btSomme"
+            <input class="container_somme" type="button" value="Somme" name="btSomme"
                 onclick="somme('txtOper1','txtOper2')">
         </form>
     </div>
 
     <br>
 
-    <footer id="animationcolor">
-        <h2>Animation de couleur en arrière plan + les images qui font peur !</h2>
-        <img src="images/beetlejuice.png" id="img1" alt="Beetlejuice" width="200" height="200">
-        <img src="images/Flandre_Scarlet.png" id="img2" alt="FlandreScarlet" width="200" height="200">
-        <img src="images/The_Exortist_Screamer.png" id="img3" alt="The Exortist Screamer" width="200" height="200">
-        <img src="images/Zombatar_1.jpg" id="img4" alt="Zombatar1" width="200" height="200">
+    <!-- "Bloc Animation de couleur et d'Images" -->
+
+    <footer id="animation_color">
+        <h2 class="deuxième_titre">Animation de couleur en arrière plan + les images qui font peur !</h2>
+        <img src="images/beetlejuice.png" id="image_Beetlejuice" alt="Beetlejuice" width="200" height="200">
+        <img src="images/Flandre_Scarlet.png" id="image_Flandre_S" alt="FlandreScarlet" width="200" height="200">
+        <img src="images/The_Exortist_Screamer.png" id="image_Exortist_Screamer" alt="The Exortist Screamer" width="200"
+            height="200">
+        <img src="images/Zombatar_1.jpg" id="image_Zombatar1" alt="Zombatar1" width="200" height="200">
     </footer>
 
     <br>
+
+    <!-- "Bloc de Redirection vers des autres sites (les différentes images indiquent de quoi il s'agit)" -->
 
     <div class="flex_deuxieme_container">
         <a href="https://fr.wikipedia.org/wiki/Jardin_japonais" target="_blank">
@@ -134,6 +152,8 @@
 
     <br>
 
+    <!-- "Bloc de Jeu (Assez marrant)" -->
+
     <div class="style_container_jeu">
         <p>Mettez ce que vous voulez par dessus ! :)</p>
         <h1 onclick="lien(this);">Cliquez !</h1>
@@ -141,17 +161,23 @@
 
     <br>
 
-        <div class="style_container_DM">
-            <h1 class="title_PJC">Petit jeu à chier</h1>
-            <p class="cta_catch">Description de mort.</p>
-            <a href="#" class="input_cursor">...</a>
-        </div>
+    <!-- "Bloc de Jeu (Pas très amusant)" -->
+
+    <div class="style_container_DM">
+        <h1 class="title_PJC">Petit jeu à chier</h1>
+        <p class="cta_catch">Description de mort.</p>
+        <a href="#" class="input_cursor">...</a>
+    </div>
 
     <br>
+
+    <!-- Texte "Coming Soon" -->
 
     <p class="text_comingsoon"><strong>Coming Soon...</strong></p>
 
     <br>
+
+    <!-- Pied de Page -->
 
     <div class=style_container_piedpage>C'est tout</div>
 
@@ -167,7 +193,7 @@
         };
 
         const setBackgroundColor = () => {
-            var background = document.getElementById("animationcolor");
+            var background = document.getElementById("animation_color");
             const randomColor = getRandomColor();
             background.style.backgroundColor = randomColor;
             background.style.color = randomColor;

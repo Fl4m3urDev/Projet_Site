@@ -1,11 +1,15 @@
+/* Corps de la page */
+
 body {
-    background-image: url(images/Stalker_AN.png);
-    background-repeat: no-repeat;
-    background-position: 0%;
-    background-size: 1700px 2095px;
+    background: url(images/Stalker_AN.png) no-repeat center fixed; 
+    background-size: cover;
 }
 
-.titredebut {
+/***************************************************************************************************************/
+
+/* Premier Titre */
+
+.premier_titre {
     margin-left: 34%;
     margin-right: 34%;
     background-color: deepskyblue;
@@ -14,6 +18,10 @@ body {
     text-align: center;
     font-family: 'Comic Sans MS', sans-serif;
 }
+
+/***************************************************************************************************************/
+
+/* "Bloc Test" */
 
 .style_container_test {
     background-color: red;
@@ -29,20 +37,24 @@ ul {
     font-style: oblique;
 }
 
-.li1:hover {
+.li_premier:hover {
     background-color: rgb(226, 226, 226);
     color: rgb(0, 73, 230);
 }
 
-.li2:hover {
+.li_deuxième:hover {
     background-color: rgb(160, 160, 160);
     color: rgb(255, 238, 0);
 }
 
-.li3:hover {
+.li_troisième:hover {
     background-color: rgb(90, 90, 90);
     color: rgb(9, 190, 9);
 }
+
+/***************************************************************************************************************/
+
+/* "Bloc Tableau" */
 
 .container_tableau {
     margin-left: 2%;
@@ -80,6 +92,10 @@ th {
     background-color: lightgreen;
 }
 
+/***************************************************************************************************************/
+
+/* Bloc Image Aléatoire */
+
 .flex_premier_container {
     margin-left: 80px;
     margin-right: 80px;
@@ -89,29 +105,9 @@ th {
     align-self: center;
 }
 
-#img1:hover {
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-}
+/***************************************************************************************************************/
 
-#img2:hover {
-    -webkit-transform: scale(-1);
-    transform: scale(0.75);
-    -webkit-transition: .3s ease-in-out;
-    transition: .3s ease-in-out;
-}
-
-#img3:hover {
-    -webkit-transform: scale(1.25);
-    transform: scale(1.25);
-    -webkit-transition: .3s ease-in-out;
-    transition: .3s ease-in-out;
-}
-
-#img4:hover {
-    filter: invert(100%);
-}
-
+/* Bloc Calcul */
 
 .style_container_frm {
     margin-left: 27%;
@@ -124,7 +120,7 @@ th {
     text-align: center;
 }
 
-.flex-containercalcul {
+.flex_container_calcul {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -132,17 +128,21 @@ th {
     margin-top: 10px;
 }
 
-.containercalcul {
+.container_calcul {
     margin-bottom: 10px;
     margin-right: 10px;
     margin-left: 10px;
 }
 
-.containersomme {
+.container_somme {
     margin-bottom: 10px;
 }
 
-#animationcolor {
+/***************************************************************************************************************/
+
+/* Bloc Animation de couleur et d'Images */
+
+#animation_color {
     transition: background 1s;
     border-style: solid;
     margin-right: 15%;
@@ -150,12 +150,39 @@ th {
     text-align: center;
 }
 
-h2 {
+.deuxième_titre {
     font-weight: 400;
     -webkit-filter: invert(100%);
     filter: invert(100%);
     transition: color 1s;
 }
+
+#image_Beetlejuice:hover {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+#image_Flandre_S:hover {
+    -webkit-transform: scale(-1);
+    transform: scale(0.75);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+#image_Exortist_Screamer:hover {
+    -webkit-transform: scale(1.25);
+    transform: scale(1.25);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+#image_Zombatar1:hover {
+    filter: invert(100%);
+}
+
+/***************************************************************************************************************/
+
+/* Bloc de Redirection vers des autres sites */
 
 .flex_deuxieme_container {
     display: flex;
@@ -180,23 +207,6 @@ h2 {
     transition: .3s ease-in-out;
 }
 
-.cta_catch {
-    font-size: 20px;
-    margin-bottom: 20px;
-}
-
-.btn {
-    color: black;
-    background-color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: crosshair;
-}
-
-.btn:hover {
-    background-color: orange;
-}
-
 #Photo_Gauntlet_Dark_Legacy {
     filter: blur(5px);
     margin-right: 30px;
@@ -214,6 +224,10 @@ h2 {
     transition: .3s ease-in-out;
 }
 
+/***************************************************************************************************************/
+
+/* Bloc de Jeu (Assez marrant) */
+
 .style_container_jeu {
     background-color: orange;
     border-radius: 80px;
@@ -226,6 +240,10 @@ h2 {
     font-size: 20px;
     text-align: center;
 }
+
+/***************************************************************************************************************/
+
+/* Bloc de Jeu (Pas très amusant) */
 
 .style_container_DM {
     background-color: #0000007a;
@@ -260,6 +278,10 @@ h2 {
     background-color: orange;
 }
 
+/***************************************************************************************************************/
+
+/* Texte "Coming Soon" */
+
 .text_comingsoon {
     background-color: rgb(238, 255, 0);
     border-style: groove;
@@ -272,6 +294,10 @@ h2 {
     text-align: center;
 }
 
+/***************************************************************************************************************/
+
+/* Pied de Page */
+
 .style_container_piedpage {
     background-color: black;
     margin-bottom: -8px;
@@ -281,6 +307,13 @@ h2 {
     font-size: 40px;
 }
 
+/***************************************************************************************************************/
+
+/* Responsive */
+
 @media screen {
     /*coming soon*/
 }
+
+
+/***************************************************************************************************************/
