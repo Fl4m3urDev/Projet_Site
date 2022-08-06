@@ -153,9 +153,9 @@ function somme(input1, input2) {
 
 function randomImgLoad() {
     var tabImg = new Array();
-    tabImg[0] = "images/Ciel_Rouge.jpg";
-    tabImg[1] = "images/Ciel_Bleu.jpg";
-    tabImg[2] = "images/Ciel_Rose.jpg";
+    tabImg[0] = "images/Ciel_Rouge.png";
+    tabImg[1] = "images/Ciel_Bleu.png";
+    tabImg[2] = "images/Ciel_Rose.png";
 
     var lTab = tabImg.length - 1;
 
