@@ -29,6 +29,18 @@ body{
     margin-top: 100px;
 }
 
+.text_comingsoon {
+    background-color: rgb(238, 255, 0);
+    border-style: groove;
+    border-color: cyan;
+    margin-left: 100px;
+    margin-right: 100px;
+    color: rgb(255, 0, 0);
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
 @media screen {
 /*coming soon*/
 }

@@ -19,7 +19,7 @@
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">
-                <img src="images/logo.png" alt="Avatar Logo" style="width:40px;" class="rounded-pill">
+                <img src="images/LeFeuDeLaMort.png" alt="Avatar Logo" style="width:40px;" class="rounded-pill">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
                 <span class="navbar-toggler-icon"></span>
@@ -38,8 +38,7 @@
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button"
-                            data-bs-toggle="dropdown">Projet</a>
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Projet</a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">Podcast</a></li>
                             <li><a class="dropdown-item" href="#">La Balade Relaxante</a></li>
@@ -84,7 +83,7 @@
             <tr class="style_tableau_f">
                 <th>femmes</th>
                 <th>anime + jv</th>
-                <td><img onclick=ChangeImgClick() id="imggirl" src="images/anime_girls_sexy.png" alt="meuf sexy"
+                <td><img onClick="ChangeImgClick()" id="imggirl" src="images/anime_girls_sexy.png" alt="meuf sexy"
                         width="200" height="200"></td>
             </tr>
         </table>
@@ -128,16 +127,25 @@
 
     <div class="flex_deuxieme_container">
         <a href="https://fr.wikipedia.org/wiki/Jardin_japonais" target="_blank">
-            <img src="images/PaysageJap1.jpg" id="Photo_PaysageJap" alt="Paysage Japonais 1" width="400px"
-                height="200px" style="border-style: groove; border-width: 1em; border-color: rgb(153, 0, 0);"></a>
+            <img src="images/PaysageJap1.jpg" alt="Paysage Japonais" id="Photo_PaysageJap"></a>
+        <a href="https://en.wikipedia.org/wiki/Gauntlet_Dark_Legacy" target="_blank">
+            <img src="images/Gauntlet_Dark_Legacy.png" alt="Gauntlet Dark Legacy" id="Photo_Gauntlet_Dark_Legacy"></a>
     </div>
 
     <br>
 
     <div class="style_container_jeu">
-        <p>Voici un petit jeu :)</p>
+        <p>Mettez ce que vous voulez par dessus ! :)</p>
         <h1 onclick="lien(this);">Cliquez !</h1>
     </div>
+
+    <br>
+
+        <div class="style_container_DM">
+            <h1 class="title_PJC">Petit jeu à chier</h1>
+            <p class="cta_catch">Description de mort.</p>
+            <a href="#" class="input_cursor">...</a>
+        </div>
 
     <br>
 
@@ -146,6 +154,8 @@
     <br>
 
     <div class=style_container_piedpage>C'est tout</div>
+
+    <!-- Code Javascript pour l'animation de couleur (Sur le fichier JS = Not Working) -->
 
     <script>
         const getRandomColor = () => {
