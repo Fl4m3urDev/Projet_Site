@@ -1,8 +1,15 @@
+/* Corps de la page */
+
 body {
 	background-color:magenta;
 	margin-left:10px;
 	margin-right:10px;
 }
+
+/***************************************************************************************************************/
+
+/* Bordure Principal */
+
 .style_border_principal {
 	border:solid;
 	background-color:rgb(126, 120, 179);
@@ -10,10 +17,20 @@ body {
 	padding-left: 5px;
 	padding-right: 5px;
 }
+
+/***************************************************************************************************************/
+
+/* Style de Police */
+
 .style_font_haut {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 18px;
 }
+
+/***************************************************************************************************************/
+
+/* Effet Image en haut à droite */
+
 #img_effet_logo {
 	filter: grayscale(100%);
 	float: right;
@@ -21,6 +38,11 @@ body {
 	width: 140px;
 	height: 140px;
 }
+
+/***************************************************************************************************************/
+
+/* Bordure Etude */
+
 .style_border_etudes {
 	border: 4mm ridge rgba(255, 220, 255, 155);
 	border-radius: 30px;
@@ -30,33 +52,48 @@ body {
 	margin-left: -5px;
 	margin-right: -5px;
 }
+
+/***************************************************************************************************************/
+
+/* Texte et Animation Classe Ecole */
+
 #style_txt_TSN {
 	background-color:cyan;
 	padding-left: 5px;
 	padding-right: 5px;
 	margin:-5px;
 }
+
 .style_txtcolor_TSN:hover {
 	color:orangered;
 }
+
 #style_txt_PSN {
 	background-color:darkcyan;
 	padding-left: 5px;
 	padding-right: 5px;
 	margin:-5px;
 }
+
 .style_txtcolor_PSN:hover {
 	color:yellow;
 }
+
 #style_txt_SSN {
 	background-color:#00C;
 	padding-left: 5px;
 	padding-right: 5px;
 	margin:-5px;
 }
+
 .style_txtcolor_SSN:hover {
 	color:greenyellow;
 }
+
+/***************************************************************************************************************/
+
+/* Colonne "Compétences Informatiques" */
+
 .Column_CI {
 	background-color:#aaa;
 	float: left;
@@ -65,6 +102,11 @@ body {
 	height: 300px;
 	font-family:"Comic Sans MS", cursive
 }
+
+/***************************************************************************************************************/
+
+/* Colonne "Expériences Professionnelles" */
+
 .Column_EP {
 	background-color:#bbb;
 	float: left;
@@ -73,6 +115,11 @@ body {
 	height: 300px;
 	font-family:"Comic Sans MS", cursive
 }
+
+/***************************************************************************************************************/
+
+/* Colonne "Divers" */
+
 .Column_Divers {
 	background-color:#ccc;
 	float: left;
@@ -81,34 +128,62 @@ body {
 	height: 300px;
 	font-family:"Comic Sans MS", cursive
 }
-.row {
+
+/***************************************************************************************************************/
+
+/* Bloc Tableau */
+
+.container_tableau {
 	display: flex;
 	flex-direction: row;
 }
+
+/***************************************************************************************************************/
+
+/* Bordure "Compétences Informatiques" */
+
 #style_border_CI {
 	background-color:#93C;
 	padding: 10px;
 }
+
 #style_font_CI {
 	font-size:12px;
 	font-family:"Times New Roman", Times, serif;
 }
+
+/***************************************************************************************************************/
+
+/* Bordure "Expériences Professionnelles" */
+
 #style_border_EP {
 	background-color: #963;
 	padding: 10px;
 }
+
 #style_font_EP {
 	font-size:12px;
 	font-family:"Times New Roman", Times, serif;
 }
+
+/***************************************************************************************************************/
+
+/* Bordure "Divers" */
+
 #style_border_Divers {
 	background-color:#CC0;
 	padding: 10px;
 }
+
 #style_font_Divers {
 	font-size:12px;
 	font-family:"Times New Roman", Times, serif;
 }
+
+/***************************************************************************************************************/
+
+/* Bordure "Langue" */
+
 .style_border_Langue {
 	background: linear-gradient(to right, red, orange, yellow, green, blue, purple);
 	border-style: solid;
@@ -117,11 +192,17 @@ body {
 	padding-bottom: 5px;
 	padding-left: 10px;
 }
+
 #style_font_Langue{
 	font-family: 'Comic Sans MS', sans-serif;
 }
- /* @media (max-width: 600px) {
- .column {
- width: 100%;
-  }
-} */
+
+/***************************************************************************************************************/
+
+/* Responsive */
+
+@media screen {
+    /*coming soon*/
+}
+
+/***************************************************************************************************************/

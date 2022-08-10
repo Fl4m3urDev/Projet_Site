@@ -1,12 +1,22 @@
+/* Corps de la page */
+
 body {
     background: url(images/Code_Binaire.gif) no-repeat center fixed; 
     background-size: cover;
 }
 
+/***************************************************************************************************************/
+
+/* "Bloc Premier" */
+
 .style_container_premier {
     background: linear-gradient(rgb(255, 238, 0), rgb(255, 0, 0));
     padding: 10px;
 }
+
+/***************************************************************************************************************/
+
+/* "Bloc Deuxième" */
 
 .style_container_deuxieme {
     padding-top: 40px;
@@ -21,6 +31,10 @@ body {
     border-style: solid;
     text-align: center;
 }
+
+/***************************************************************************************************************/
+
+/* Taille des Photos des Langages Informatique */
 
 #Photo_CV, #Photo_HTML, #Photo_Javascript, #Photo_SQL, #Photo_Python, #Photo_VB, #Photo_CSharp, #Photo_XML {
     width: 75px;
@@ -37,6 +51,10 @@ body {
     height: 75px;
 }
 
+/***************************************************************************************************************/
+
+/* Texte "Coming Soon" */
+
 .text_comingsoon {
     background-color: rgb(238, 255, 0);
     border-style: groove;
@@ -49,6 +67,12 @@ body {
     text-align: center;
 }
 
+/***************************************************************************************************************/
+
+/* Responsive */
+
 @media screen {
     /*coming soon*/
 }
+
+/***************************************************************************************************************/
