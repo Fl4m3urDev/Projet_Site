@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      background-color: magenta;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+    .style_border_principal {
+      border: solid;
+      background-color: rgb(126, 120, 179);
+      padding-bottom: 10px;
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+
+    .style_font_haut {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 18px;
+    }
+
+    #img_effet_logo {
+      filter: grayscale(100%);
+      float: right;
+      margin-right: 10px;
+      width: 140px;
+      height: 140px;
+    }
+
+    .style_border_etudes {
+      border: 4mm ridge rgba(255, 220, 255, 155);
+      border-radius: 30px;
+      background-color: rgb(156, 56, 96);
+      padding-left: 5px;
+      padding-right: 5px;
+      margin-left: -5px;
+      margin-right: -5px;
+    }
+
+    #style_txt_TSN {
+      background-color: cyan;
+      padding-left: 5px;
+      padding-right: 5px;
+      margin: -5px;
+    }
+
+    .style_txtcolor_TSN:hover {
+      color: orangered;
+    }
+
+    #style_txt_PSN {
+      background-color: darkcyan;
+      padding-left: 5px;
+      padding-right: 5px;
+      margin: -5px;
+    }
+
+    .style_txtcolor_PSN:hover {
+      color: yellow;
+    }
+
+    #style_txt_SSN {
+      background-color: #00C;
+      padding-left: 5px;
+      padding-right: 5px;
+      margin: -5px;
+    }
+
+    .style_txtcolor_SSN:hover {
+      color: greenyellow;
+    }
+
+    .Column_CI {
+      background-color: #aaa;
+      float: left;
+      width: 31.8%;
+      padding: 10px;
+      height: 300px;
+      font-family: "Comic Sans MS", cursive
+    }
+
+    .Column_EP {
+      background-color: #bbb;
+      float: left;
+      width: 31.8%;
+      padding: 10px;
+      height: 300px;
+      font-family: "Comic Sans MS", cursive
+    }
+
+    .Column_Divers {
+      background-color: #ccc;
+      float: left;
+      width: 31.8%;
+      padding: 10px;
+      height: 300px;
+      font-family: "Comic Sans MS", cursive
+    }
+
+    .row {
+      display: flex;
+      flex-direction: row;
+    }
+
+    #style_border_CI {
+      background-color: #93C;
+      padding: 10px;
+    }
+
+    #style_font_CI {
+      font-size: 12px;
+      font-family: "Times New Roman", Times, serif;
+    }
+
+    #style_border_EP {
+      background-color: #963;
+      padding: 10px;
+    }
+
+    #style_font_EP {
+      font-size: 12px;
+      font-family: "Times New Roman", Times, serif;
+    }
+
+    #style_border_Divers {
+      background-color: #CC0;
+      padding: 10px;
+    }
+
+    #style_font_Divers {
+      font-size: 12px;
+      font-family: "Times New Roman", Times, serif;
+    }
+
+    .style_border_Langue {
+      background: linear-gradient(to right, red, orange, yellow, green, blue, purple);
+      border-style: solid;
+      border-color: black;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-left: 10px;
+    }
+
+    #style_font_Langue {
+      font-family: 'Comic Sans MS', sans-serif;
+    }
+
+    /* @media (max-width: 600px) {
+   .column {
+   width: 100%;
+    }
+  } */
+  </style>
+  <title>Le Fameux CV</title>
+</head>
+
+<body>
+  <header class="style_border_principal">
+    <center>
+      <h1>Le Fameux CV (Version Sans Fichier CSS)</h1>
+    </center>
+    <div class=style_font_haut>
+      <p><em>Louis BAYE</em><img src="../images/LeFeuDeLaMort.png" alt="lul" id="img_effet_logo"></p>
+      <p><em>Saint-Brieuc</em></p>
+      <p><em>France</em></p>
+      <p><em>Née le 2 Octobre 2002</em></p>
+      <p><em>louis.baye@outlook.fr</em></p>
+    </div>
+    <br>
+    <header class="style_border_etudes">
+      <div>
+        <h2>Etudes :</h2>
+      </div>
+      <div id=style_txt_TSN class="style_txtcolor_TSN">
+        <p>2020-2021 : Terminale Baccalauréat Professionel Système Numérique (Option : RISC) (Mention : Assez Bien)</p>
+      </div>
+      <div id=style_txt_PSN class="style_txtcolor_PSN">
+        <p>2019-2020 : Première Baccalauréat Professionel Système Numérique (Option : RISC)</p>
+      </div>
+      <div id=style_txt_SSN class="style_txtcolor_SSN">
+        <p>2018-2019 : Seconde Baccalauréat Professionel Système Numérique</p>
+      </div>
+    </header>
+    <br>
+    <div class="row">
+      <div class="Column_CI">
+        <header id="style_border_CI">Compétences Informatiques :</header>
+        <ul id="style_font_CI">
+          <li>Manipuler les outils de Windows et Linux</li>
+          <li>Utiliser le CMD (Windows) et CLI (Linux)</li>
+          <li>Coder en HTML, CSS, JavaScript, PHP, SQL, Python... (FrameWork : Bootstrap, CodeIgmiter et Angular)</li>
+          <li>Faire un Serveur (DHCP, DNS, ...) + Manipulation du réseau</li>
+          <li>Utilisation du Raspberry et Arduino</li>
+          <li>Dev Ops (Mise à jour GLPI...)</li>
+          <li>Utiliser des outils de développement de projet (Visio, DiagramDB.io, WBS, Grantt)</li>
+        </ul>
+      </div>
+      <div class="Column_EP">
+        <header id="style_border_EP">Expériences Professionnelles :</header>
+        <ul id="style_font_EP">
+          <li>Installation + Configuration + Bureautique sur les PC</li>
+          <li>Installation d'une machine virtuel avec des ressources</li>
+          <li>Installation des imprimantes + mise en réseau</li>
+          <li>Mise en réseau le robot avec un Raspberry + PC (Logiciel Choregraphe)</li>
+          <li>Codage WEB (HTML, CSS, JavaScript) pour faire une page contenant un compteur des pages de chaque
+            imprimantes</li>
+          <li>Codage WEB (FrameWork : Angular) pour faire une page contenant une gestion de finance et budget pour les
+            ressources humaines</li>
+          <li>Utilisation des outils de développement de projet (Visio, DiagramDB.io, WBS, Grantt) pour "KIZEO"</li>
+        </ul>
+      </div>
+      <div class="Column_Divers">
+        <header id="style_border_Divers">Divers :</header>
+        <ul id="style_font_Divers">
+          <li>Lecture</li>
+          <li>Sport + Musculation</li>
+          <li>Jeux Vidéo + Collection sur différentes plateformes</li>
+          <li>Mixage de musique Electronique + Collection de CD et de Vinyl</li>
+        </ul>
+      </div>
+    </div>
+    <br>
+    <div class="style_border_Langue">
+      <p id="style_font_Langue">Langue Pratiqué :</p>
+      <p><em>- Anglais (Depuis le CP)</em></p>
+      <p><em>- Chinois (Depuis la 6ème à la 3ème)</em></p>
+    </div>
+  </header>
+</body>
+
+</html>

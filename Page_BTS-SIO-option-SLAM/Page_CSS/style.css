@@ -1,0 +1,49 @@
+/* Corps de la page */
+
+body {
+    background: url(../images/Matrix_Effect.gif) no-repeat center fixed; 
+    background-size: cover;
+}
+
+/***************************************************************************************************************/
+
+/* Premier Titre */
+
+.premier_titre {
+    margin-top: 20px;
+    margin-left: 37%;
+    margin-right: 37%;
+    background-color: rgb(238, 255, 0);
+    border-style: groove;
+    border-color: cyan;
+    color: rgb(255, 0, 0);
+    font-size: 30px;
+    font-family: 'Comic Sans MS', sans-serif;
+    text-align: center;
+}
+
+/***************************************************************************************************************/
+
+/* Style Bloc "ExoFlex" */
+
+.exoflex {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 37%;
+    margin-right: 37%;
+    background-color: rgba(0, 255, 64, 0.6);
+    border-style: solid;
+    border-color: black;
+    border-radius: 50px;
+    text-align: center;
+}
+
+/***************************************************************************************************************/
+
+/* Couleur texte de lien */
+
+.couleur_lien {
+    color: black;
+}
+
+/***************************************************************************************************************/
