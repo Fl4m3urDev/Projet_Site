@@ -1,16 +1,112 @@
+/* Corps de la page */
+
+body {
+    background: url(images/Paysage_Bleu.png) no-repeat center fixed;
+    background-size: cover;
+}
+
+/***************************************************************************************************************/
+
 /* Premier Titre */
 
 .premier_titre {
-    margin: 20%;
     margin-left: 38%;
     margin-right: 38%;
-    background-color: rgb(238, 255, 0);
+    background-color: greenyellow;
     border-style: groove;
-    border-color: cyan;
-    color: rgb(255, 0, 0);
+    border-radius: 20px;
+    border-color: orangered;
+    color: purple;
     font-size: 30px;
     font-family: 'Comic Sans MS', sans-serif;
     text-align: center;
+}
+
+/***************************************************************************************************************/
+
+/* "Bloc Podcast" */
+
+.style_container_cybertrance_1,
+.style_container_tst_1,
+.style_container_st_2,
+.style_container_ft_v2,
+.style_container_mpp,
+.style_container_aap3,
+.style_container_ttv1,
+.style_container_ttv2,
+.style_container_ttv3 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    background-color: rgba(135, 207, 235, 0.75);
+    border-radius: 50px;
+    border-style: solid;
+    color: red;
+}
+
+/***************************************************************************************************************/
+
+/* Photo Podcast */
+
+.photo_cybertrance_1,
+.photo_tst_1,
+.photo_st_2,
+.photo_ft_v2,
+.photo_mpp,
+.photo_aap3,
+.photo_ttv1,
+.photo_ttv2,
+.photo_ttv3 {
+    width: 40%;
+    height: 40%;
+}
+
+/***************************************************************************************************************/
+
+/* Text Podcast */
+
+.text_cybertrance_1,
+.text_tst_1,
+.text_st_2,
+.text_ft_v2,
+.text_mpp,
+.text_aap3,
+.text_ttv1,
+.text_ttv2,
+.text_ttv3 {
+    color: black;
+    text-align: start;
+    font-size: 14px;
+    margin-left: 50px;
+}
+
+/***************************************************************************************************************/
+
+/* Texte "Coming Soon" */
+
+.text_comingsoon {
+    background-color: rgb(238, 255, 0);
+    border-style: groove;
+    border-color: cyan;
+    margin-left: 100px;
+    margin-right: 100px;
+    color: rgb(255, 0, 0);
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+/***************************************************************************************************************/
+
+/* Responsive */
+
+@media screen {
+    /*coming soon*/
 }
 
 /***************************************************************************************************************/
