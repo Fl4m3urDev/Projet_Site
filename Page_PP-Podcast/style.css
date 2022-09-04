@@ -73,8 +73,6 @@ body {
 .text_cybertrance_1,
 .text_tst_1,
 .text_st_2,
-.text_ft_v2,
-.text_mpp,
 .text_aap3,
 .text_ttv1,
 .text_ttv2,
@@ -83,6 +81,34 @@ body {
     text-align: start;
     font-size: 14px;
     margin-left: 50px;
+}
+
+.text_ft_v2_cd1 {
+    color: black;
+    text-align: start;
+    font-size: 10px;
+    margin-left: 50px;
+}
+
+.text_ft_v2_cd2 {
+    color: black;
+    text-align: start;
+    font-size: 10px;
+    margin-left: 25px;
+}
+
+.text_mpp_cd1 {
+    color: black;
+    text-align: start;
+    font-size: 10px;
+    margin-left: 50px;
+}
+
+.text_mpp_cd2 {
+    color: black;
+    text-align: start;
+    font-size: 10px;
+    margin-left: 15px;
 }
 
 /***************************************************************************************************************/
