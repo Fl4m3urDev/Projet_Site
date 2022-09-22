@@ -243,7 +243,7 @@ th {
 
 /***************************************************************************************************************/
 
-/* Bloc de Jeu (Pas très amusant) */
+/* Bloc de Jeu (Pas très amusant + En mémoire de Karl T */
 
 .style_container_DM {
     background-color: #0000007a;
@@ -272,6 +272,7 @@ th {
     padding: 10px 20px;
     border-radius: 5px;
     cursor: crosshair;
+    text-decoration: none;
 }
 
 .input_cursor:hover {

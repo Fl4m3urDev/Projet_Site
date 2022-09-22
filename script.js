@@ -86,18 +86,27 @@ function ChangeImgClick() {
         Image_Id.src = "images/Komi_San.png";
     }
     else if (Image_Id.src.match("images/Komi_San.png")) {
+        Image_Id.src = "images/Futaba_Igarashi.png";
+    }
+    else if (Image_Id.src.match("images/Futaba_Igarashi.png")) {
         Image_Id.src = "images/Kizuna_AI.png";
     }
     else if (Image_Id.src.match("images/Kizuna_AI.png")) {
         Image_Id.src = "images/Hatsune_Miku.png";
     }
     else if (Image_Id.src.match("images/Hatsune_Miku.png")) {
+        Image_Id.src = "images/Kirino_Kousaka.png";
+    }
+    else if (Image_Id.src.match("images/Kirino_Kousaka.png")) {
         Image_Id.src = "images/Haruhi_Suzumiya.png";
     }
     else if (Image_Id.src.match("images/Haruhi_Suzumiya.png")) {
         Image_Id.src = "images/Konata_Izumi.png";
     }
     else if (Image_Id.src.match("images/Konata_Izumi.png")) {
+        Image_Id.src = "images/Yazawa_Nico.png";
+    }
+    else if (Image_Id.src.match("images/Yazawa_Nico.png")) {
         Image_Id.src = "images/Doki_Doki_Literrature_Club.png";
     }
     else if (Image_Id.src.match("images/Doki_Doki_Literrature_Club.png")) {
