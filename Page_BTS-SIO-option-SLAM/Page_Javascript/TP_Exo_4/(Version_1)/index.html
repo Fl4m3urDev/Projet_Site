@@ -1,0 +1,35 @@
+<html>
+
+<head>
+    <title>Formulaire somme V1</title>
+    <!-- La somme est calculée par clic sur le bouton Somme, le résultat s'affiche dans une boîte message. -->
+</head>
+
+<body>
+    <form name="frmCalcul">
+        Opérande 1 : <input type="text" name="txtOper1" id="Oper_1" size="10" maxlength="5">
+        Opérande 2 : <input type="text" name="txtOper2" id="Oper_2" size="10" maxlength="5">
+        <input type="button" value="Somme" name="btSomme" id="Somme" onClick="CalculSomme();">
+    </form>
+</body>
+<script>
+    function CalculSomme() {
+        // déclaration de variables.
+        var Operande_1 = parseFloat(document.getElementById("Oper_1").value);
+        var Operande_2 = parseFloat(document.getElementById("Oper_2").value);
+        var Somme = document.getElementById("Somme").value;
+
+        // Effectuation de l'opération.
+        Somme = Operande_1 + Operande_2;
+
+        // Condition lorsqu'il y a une autre saisi à la place d'un nombre.
+        if (isNaN(Somme)) {
+            alert("Veuillez saisir des nombres !");
+        }
+        else {
+            alert("Résultat = " + Somme);
+        } // fin "if" et "else"
+    } // fin fonction
+</script>
+
+</html>

@@ -1,0 +1,119 @@
+<html>
+
+<head>
+
+    <title>Formulaire personne</title>
+
+    <script src="test.js"></script>
+
+    <script>
+
+        function colore(x) {
+
+            x.style.background = "red";
+
+        }
+
+        function avertit() {
+
+            alert("Message déclenché sur l'évènement onload (chargement de la page)");
+
+        }
+
+    </script>
+
+</head>
+
+<body onload="avertit()>
+
+    <p id=" p1">Hello World!</p>
+
+    <script>
+
+        document.getElementById("p1").innerHTML = "Nouveau texte!";
+
+    </script>
+
+    <form name="frmPersonne" action="">
+
+        <h2> Renseignements à fournir : </h2>
+
+        <div class="bloc_radio">
+
+            <input type="radio" name="optEtatCivi1" value="1"> Monsieur
+
+            <input type="radio" name="optEtatCivil" value="2"> Madame
+
+            <input type="radio" name="optEtatCivil" value="3" checked> Mademoiselle
+
+            <br />
+
+            Région :
+
+            <select name="lstReg" size="1">
+
+                <option>Alsace</option>
+
+                <option>Bretagne</option>
+
+                <option selected>Champagne</option>
+
+            </select>
+
+            <br />
+
+            <input type="button" value="Valider" name="btValider" onclick="verif()">
+
+            <input type="reset" value="Annuler" name="brAnnul">
+
+        </div>
+
+        Nom: <input type="text" onfocus="colore(this)">
+
+        Prenom : <input type="text" onfocus="colore(this)">
+
+        <p>Quand la zone de saisie obtient le focus, sa couleur change.</p>
+
+        <p id="p2">Hello World 2!</p>
+
+        <script>
+    
+            document.getElementById("p2").style.color="blue";
+    
+        </script>
+    
+        <p>Le paragraphe ci-dessus a été modifié par un script.</p>
+
+        <div id="d1">
+
+            <p id="p1">Mon 1er paragraphe</p>
+        
+            <p id="p2">Mon 2ème paragraphe</p>
+        
+        </div>
+        
+        <script>
+        
+            var para=document.createElement("p");
+        
+            var node=document.createTextNode("Mon 3ème paragraphe");
+        
+            para.appendChild(node);
+        
+         
+        
+            var element=document.getElementById("d1");
+        
+            element.appendChild(para);
+        
+        </script>
+
+    </form>
+
+    <script>/* ?! */
+        changeAffichage();
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<html>
+
+<head>
+    <title>Formulaire somme v3</title>
+
+    <!-- La somme est une zone de texte mise à jour dès qu'un changement
+est effectué dans une des zones de texte opérandes.
+Le bouton Somme est alors supprimé, le calcul de la somme étant
+déclenchée sur l'événement onChange sur chacune des zones de texte
+opérandes. -->
+
+</head>
+
+<body onload="document.frmCalcul.Oper_1.focus();">
+
+    <form name="frmCalcul" onReset="return ValideReset()">
+
+        <!-- onBlur : se produit quand un textarea, un text ou un select perd la main sur les entrées clavier
+
+onChange : se produit quand un textarea, un text ou un select est modifié par l'utilisateur; n'intervient pas à chaque changement ,seulement après le onBlur
+
+onSelect : se produit quand un textarea ou un text est sélectionné. toujours précédé d'un événement onBlur -->
+
+        Opérande 1 : <input type="text" name="txtOper1" id="Oper_1" size="10" maxlength="5" onChange="AffecteSomme();">
+
+        Opérande 2 : <input type="text" name="txtOper2" id="Oper_2" size="10" maxlength="5" onChange="AffecteSomme();">
+
+        Somme : <input type="text" name="txtSomme" id="Somme" readonly size="32">
+
+        <input type="reset" value="Annuler" name="brAnnuler">
+
+    </form>
+</body>
+<script>
+    function AffecteSomme() {
+        // déclaration de variables.
+        var Operande_1 = parseFloat(document.getElementById("Oper_1").value);
+        var Operande_2 = parseFloat(document.getElementById("Oper_2").value);
+        var Somme = Operande_1 + Operande_2;
+        document.getElementById("Somme").value = ValideReset(Somme);
+
+    } // fin fonction
+
+    function ValideReset(Somme) {
+
+        // Condition lorsqu'il y a une autre saisi à la place d'un nombre.  
+        if (!isNaN(Somme)) {
+            return Somme;
+        }
+        else {
+            return 'Erreur ! Veuillez saisir des nombres !';
+        } // fin "if" et "else"
+
+        // return (window.confirm('Etes-vous sûr d\'effacer tout ? '));
+
+    } // fin fonction
+</script>
+
+</html>

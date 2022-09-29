@@ -10,9 +10,186 @@
 
 <body>
 
-  <!-- Texte -->
+  <!-- Formulaire HTML de TEST-->
 
-  <p>à voir ce que je peux faire...</p>
+  <center>
+
+    <h1>Formulaire HTML de TEST :</h1>
+
+    <form action="#" method="POST">
+
+        <div>
+
+            <label for="champ1">Votre Nom :</label>
+
+            <input type="name" name="user_name" required>
+
+        </div>
+
+        <br>
+
+        <div>
+
+            <label for="champ1">Votre Prénom :</label>
+
+            <input type="name" name="user_name" required>
+
+        </div>
+
+        <br>
+
+        <div>
+
+            <label for="champ1">Votre Adresse E-mail :</label>
+
+            <input type="email" name="user_email" required>
+
+        </div>
+
+        <br>
+
+        <div>
+
+            <label>Votre Date de Naissance :</label>
+
+            <input type="date" name="anniversaire" required>
+
+        </div>
+
+        <br>
+
+        <div>
+
+            <label> Essayez de recherchez quelques choses de plus fassinant :</label>
+
+            <input list="navigateurs" placeholder="Entrez un navigateur" name="navigateur" required>
+
+            <datalist id="navigateurs">
+
+                <option value="Internet Explorer">
+
+                <option value="Firefox">
+
+                <option value="Chrome">
+
+                <option value="Opera">
+
+                <option value="Safari">
+
+            </datalist>
+
+        </div>
+
+        <br>
+
+        <div>
+
+            <label>Quel heures est t-il ?</label>
+
+            <input type="time" name="wakeup" required>
+
+        </div>
+
+        <br>
+
+        <div>
+
+            <label>Selectionnez votre couleur préféré :</label>
+
+            <input type="color" value="#ff0000" name="textcolor">
+
+        </div>
+
+        <br>
+
+        <div>
+
+            <label>Voici un système d'ingrémentation automatique jusqu'a une valeur "min-max" :</label>
+
+            <input type="number" step="1" value="0" min="0" max="100">
+
+        </div>
+
+        <br>
+
+        <div>
+
+            <label>Choisi ta voiture :</label>
+
+            <select id="voitures" name="voitures">
+
+                <option value="renault">Renault</option>
+            
+                <option value="peugeot">Peugeot</option>
+            
+                <option value="citroën">Citroën</option>
+
+                <option value="volkswagen">Volkswagen</option>
+
+                <option value="toyota">Toyota</option>
+            
+                <option value="dacia">Dacia</option>
+            
+                <option value="ferrari">Ferrari</option>
+
+                <option value="skoda">Skoda</option>
+
+                <option value="mini">Mini</option>
+            </select> 
+            
+        </div>
+
+        <br>
+
+        <div>
+
+            <label>Fréquence de <em>TEST</em> :</label>
+
+            <input type="range" value="15" max="50" min="0" step="5">
+
+        </div>
+
+        <br>
+
+        <div>
+
+            <label><strong>TU AS COMPRIS ?!?!</strong></label>
+
+            <br>
+
+            <br>
+
+            <label>oui</label>
+
+            <input type="radio" name="rdo"/ required>
+
+            <label>non</label>
+
+            <input type="radio" name="rdo"/ required>
+
+        </div>
+
+        <br>
+
+        <div>
+
+            <label for="accepte">J'accepte les conditions :</label>
+
+            <input type="checkbox" id="accepte" name="accepte">
+
+        </div>
+
+        <br>
+
+        <div>
+
+            <input type="submit" value="Valider" onclick="alert('Attention vous allez être rediriger ailleurs')">
+
+        </div>
+
+    </form>
+
+</center>
 
 </body>
 
