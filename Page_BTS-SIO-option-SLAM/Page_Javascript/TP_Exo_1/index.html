@@ -1,0 +1,72 @@
+<html>
+
+<head>
+
+    <title>Saisie de noms et affichage dans une liste ordonn&eacute;e</title>
+
+</head>
+
+<body onload="SaisirNom()">
+
+    <H1>Exemple de boucles</H1>
+
+    <p>Entrez une série de noms. Terminez la saisie en cliquant sur Annuler dans la boîte message.
+
+        Les noms seront alors affichés dans une liste ordonnée.
+
+    </p>
+
+    <H2>Liste des noms </H2>
+
+    <ol id="elem">
+        <li id="elem-li">
+        </li>
+    </ol>
+
+    <script language="javascript">
+
+    // à compléter par la saisie de noms, l'affichage des noms saisis
+
+    // dans une liste numérotée et le nombre de noms saisis
+
+    //------------------Déclaration variables--------------------------
+    var nom;
+    var tabNom = new Array();
+    //------------------boucle de saisie--------------------------
+    do {
+      nom = prompt("Entrez un nom : ", "");
+      if ((nom != null) && (nom != '')) {
+        tabNom.push(nom); //je mets le nom saisi dans le tableau
+      }
+    }
+    while (nom != null); //condition du do
+
+    //------------------parcours tableau et liste--------------------------
+    for (var i in tabNom) //parcours du tableau
+    {
+      var oLi = document.createElement("li"); //nouveau noeud li
+      var oText = document.createTextNode(majNom(tabNom[i])); //noeud texte
+      oLi.appendChild(oText); // on attache le noeud texte au noeud li
+      document.getElementById('liste').appendChild(oLi); // on attache le noeud li noeud liste
+    }
+
+    //------------------phrase de fin--------------------------
+    // if else en raccourci : condition ? expression 1 : expression 2
+    var fin = tabNom.length != 0 ? document.createTextNode("Tu as saisi " + tabNom.length + " noms.") : document.createTextNode("Tu n'as rien saisi, patate !");
+    document.getElementById('resultat').appendChild(fin);
+    
+    // ---------------petite fioriture en prime--------------
+    function majNom(a) {
+    	var premiereLettreMaj = a.charAt(0).toUpperCase();
+      var nomSansPremiereLettre = a.substr(1).toLowerCase();
+      var newNom = premiereLettreMaj + nomSansPremiereLettre;
+      return newNom;
+      //version courte
+      //return a.charAt(0).toUpperCase() + a.substr(1);
+    }
+
+    </script>
+
+</body>
+
+</html>

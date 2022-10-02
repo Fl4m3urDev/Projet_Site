@@ -1,0 +1,34 @@
+<html>
+
+<head>
+
+    <title>TP-JS 6</title>
+
+</head>
+
+<body>
+
+    <div>
+        <img src="image008.gif" alt="ampoule éteinte" onclick="ClickImg(this)">
+        <img src="image009.gif" alt="ampoule allumé" onclick="ClickImg(this)">
+        <img src="image008.gif" alt="ampoule éteinte" onclick="ClickImg(this)">
+        <img src="image009.gif" alt="ampoule allumé" onclick="ClickImg(this)">
+    </div>
+
+</body>
+
+<script>
+
+    function ClickImg(ampoule) {
+        var img = ampoule.src.substr(-12);
+        if (img == "image009.gif") {
+            ampoule.src = "image008.gif";
+        }
+        else {
+            ampoule.src = "image009.gif";
+        }
+    }
+
+</script>
+
+</html>
