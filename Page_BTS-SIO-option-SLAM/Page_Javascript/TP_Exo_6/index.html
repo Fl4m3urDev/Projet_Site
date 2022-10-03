@@ -2,27 +2,11 @@
 
 <head>
 
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="script.js"></script>
+
     <title>TP-JS 6</title>
-
-    <style>
-        #rose {
-            background-color: pink;
-            height: 5%;
-            width: 10%;
-        }
-
-        #vert {
-            background-color: green;
-            height: 5%;
-            width: 10%;
-        }
-
-        #bleu {
-            background-color: blue;
-            height: 5%;
-            width: 10%;
-        }
-    </style>
 
 </head>
 
@@ -33,28 +17,5 @@
     <div id="bleu" draggable="true" ondragstart="Glisser_Deplacer(event);">bleu</div>
 
 </body>
-
-<script>
-
-    function DeleteElement() {
-        var child = document.getElementById('rose');
-        child.parentNode.removeChild(child)
-    }
-
-    function ChangeText() {
-        document.getElementById('vert').innerHTML = "le texte change !";
-    }
-
-    function Glisser_Deplacer(event) {
-    event
-    .dataTransfer
-    .setData('text/plain', event.target.id);
-
-    event
-    .currentTarget
-    .style
-    }
-
-</script>
 
 </html>
