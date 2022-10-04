@@ -2,8 +2,6 @@ p {
     text-align: right;
 }
 
-/* pas 100% fonctionniel */
-
 div#jeu {
     width: 22%;
     display: flex;

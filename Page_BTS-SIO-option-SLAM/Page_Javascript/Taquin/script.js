@@ -8,14 +8,8 @@ function move(lig, col) {
 
     /* Sans déclaration de variable + Méthode plus courtes et détaillé */
 
-    // if ((elig == lig && ((ecol==col+1) || (ecol==col-1))) || (ecol == col && ((elig == lig-1) || (elig== lig+1)))) {}
-
-    /* Avec déclaration de variable + Méthode plus logique et moins absurdes */
-
-     var case_vide = elig + ecol
-     var case_pleine = lig + col
-     if ((case_vide == case_pleine + 1) || (case_vide == case_pleine - 1)) {
-
+    if ((elig == lig && ((ecol==col+1) || (ecol==col-1))) || (ecol == col && ((elig == lig-1) || (elig== lig+1)))) {
+        
     /* on récupère les identifiants des deux boutons concernés */
     var bname = 'case' + lig + col;
     var ename = 'case' + elig + ecol;
