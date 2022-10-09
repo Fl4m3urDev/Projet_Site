@@ -2,64 +2,29 @@
 
 <head>
 
-    <title>Formulaire somme v2</title>
-
-    <!-- La somme est toujours calculée par clic sur le bouton Somme,
-mais le résultat est affiché directement dans le formulaire.
-De plus, un message d'erreur apparaît si au moins un des opérandes
-n'est pas renseigné.
-Idem si au moins un des opérandes n'est pas numérique.
-Nécessité d'écrire une fonction regroupant le traitement, à définir
-dans l'entête du document, délimité par le début et fin de balise
-
-SCRIPT (Sur JS).
- Autres ajouts :
-- Focus affecté par défaut sur la 1ère zone de texte.
-- Validation de l'effacement des zones de texte en traitant l'événement onReset sur le formulaire.
-Pour tester si une chaîne de caractère n’est pas un nombre vous utiliserez la fonction isNaN (is Not a Number) -->
+    <title>Saisie de noms et affichage dans une liste ordonn&eacute;e</title>
 
 </head>
 
-<body onLoad="document.frmCalcul.Oper_1.focus()">
-    <form name="frmCalcul" onReset="return ValideReset()">
+<body>
 
-        Opérande 1 : <input type="text" name="txtOper1" id="Oper_1" size="10" maxlength="5">
+    <H1>Exemple de boucles</H1>
 
-        Opérande 2 : <input type="text" name="txtOper2" id="Oper_2" size="10" maxlength="5">
+    <p>Entrez une série de noms. Terminez la saisie en cliquant sur Annuler dans la boîte message.
 
-        <br>
+        Les noms seront alors affichés dans une liste ordonnée.
 
-        <input type="button" value="Somme" name="btSomme" id="Somme" onClick="AffecteSomme()">
+    </p>
 
-        <input type="reset" value="Annuler" name="brAnnuler">
+    <H2>Liste des noms </H2>
 
-        Résultat : <input type="text" name="txtResult" id="Resultat" readonly size="32">
-
-    </form>
+    <ol id="elem">
+        <li id="elem-li">
+        </li>
+    </ol>
 
 </body>
-<script>
-    function AffecteSomme() {
-        // déclaration de variables.
-        var Operande_1 = parseFloat(document.getElementById("Oper_1").value);
-        var Operande_2 = parseFloat(document.getElementById("Oper_2").value);
-        // Effectuation de l'opération.
-        var Somme = Operande_1 + Operande_2;
-        var Resultat;
-        document.getElementById("Resultat").value = ValideReset(Somme);
 
-    } // fin fonction
-
-    function ValideReset(Somme) {
-
-        // Condition lorsqu'il y a une autre saisi à la place d'un nombre.  
-        if (!isNaN(Somme)) {
-            return Somme;
-        }
-        else {
-            return 'Erreur ! Veuillez saisir des nombres !';
-        } // fin "if" et "else"
-    } // fin fonction 
-</script>
+<script src="script.js"></script>
 
 </html>

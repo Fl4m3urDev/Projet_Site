@@ -9,7 +9,7 @@ function move(lig, col) {
     /* Sans déclaration de variable + Méthode plus courtes et détaillé */
 
     if ((elig == lig && ((ecol==col+1) || (ecol==col-1))) || (ecol == col && ((elig == lig-1) || (elig== lig+1)))) {
-        
+
     /* on récupère les identifiants des deux boutons concernés */
     var bname = 'case' + lig + col;
     var ename = 'case' + elig + ecol;

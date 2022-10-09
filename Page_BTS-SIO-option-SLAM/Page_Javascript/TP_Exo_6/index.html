@@ -3,19 +3,19 @@
 <head>
 
     <link rel="stylesheet" href="styles.css">
-
-    <script src="script.js"></script>
-
     <title>TP-JS 6</title>
 
 </head>
 
 <body>
-
-    <div id="rose" onclick="DeleteElement()">rose</div>
-    <div id="vert" onmouseover="ChangeText()">vert</div>
-    <div id="bleu" draggable="true" ondragstart="Glisser_Deplacer(event);">bleu</div>
+    <section ondragstart="drag(event)" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <div id="rose" draggable="true">rose</div>
+        <div id="vert" draggable="true">vert</div>
+        <div id="bleu" draggable="true">bleu</div>
+    </section>
 
 </body>
+
+<script src="script.js"></script>
 
 </html>

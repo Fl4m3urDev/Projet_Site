@@ -1,17 +1,21 @@
 #rose {
     background-color: pink;
     height: 5%;
-    width: 10%;
 }
 
 #vert {
     background-color: green;
     height: 5%;
-    width: 10%;
 }
 
 #bleu {
     background-color: blue;
     height: 5%;
-    width: 10%;
+}
+
+#section {
+    width: 170px;
+    height: 70px;
+    padding: 10px;
+    border: 1px solid #aaaaaa;
 }

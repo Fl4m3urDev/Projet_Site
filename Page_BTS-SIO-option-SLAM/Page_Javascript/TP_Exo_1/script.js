@@ -18,11 +18,13 @@
       var oLi = document.createElement("li");
       var oText = document.createTextNode(majNom(tabNom[i]));
       oLi.appendChild(oText);
-      document.getElementById('liste').appendChild(oLi);
+      document.getElementById('elem').appendChild(oLi);
     }
 
+  
+
     var fin = tabNom.length != 0 ? document.createTextNode("Tu as saisi " + tabNom.length + " noms.") : document.createTextNode("Tu n'as rien saisi, guignol !");
-    document.getElementById('resultat').appendChild(fin);
+    document.getElementById('elem-li').appendChild(fin);
     
     function majNom(a) {
     	var premiereLettreMaj = a.charAt(0).toUpperCase();
