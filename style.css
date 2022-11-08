@@ -105,37 +105,9 @@ th {
     align-self: center;
 }
 
-/***************************************************************************************************************/
-
-/* Bloc Calcul */
-
-.style_container_frm {
-    margin-left: 27%;
-    margin-right: 27%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background-color: gold;
-    border-style: solid;
-    border-radius: 40px;
-    text-align: center;
-}
-
-.flex_container_calcul {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10px;
-}
-
-.container_calcul {
-    margin-bottom: 10px;
-    margin-right: 10px;
-    margin-left: 10px;
-}
-
-.container_somme {
-    margin-bottom: 10px;
+.input_cursor_img {
+    color: black;
+    cursor: pointer;
 }
 
 /***************************************************************************************************************/
@@ -266,7 +238,7 @@ th {
     margin-bottom: 20px;
 }
 
-.input_cursor {
+.input_cursor_link {
     color: black;
     background-color: white;
     padding: 10px 20px;
@@ -275,7 +247,7 @@ th {
     text-decoration: none;
 }
 
-.input_cursor:hover {
+.input_cursor_link:hover {
     background-color: orange;
 }
 

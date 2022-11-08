@@ -143,21 +143,6 @@ function ChangeImgClick() {
 
 /***************************************************************************************************************/
 
-// Fonction permettant de faire le calcul d'une addition...
-
-function somme(input1, input2) {
-
-    var operande1 = document.getElementById(input1).value;
-    var operande2 = document.getElementById(input2).value;
-    var somme = parseFloat(operande1) + parseFloat(operande2);
-    if (isNaN(somme)) { alert("Veuillez saisir des nombres"); }
-    else {
-        alert("Résultat : " + somme);
-    }
-}
-
-/***************************************************************************************************************/
-
 // Fonction permettant de charger les images des beaux ciel
 
 function randomImgLoad() {
