@@ -36,7 +36,7 @@ body {
 
 /* Taille des Photos des Langages Informatique */
 
-#Photo_CV, #Photo_HTML, #Photo_Javascript, #Photo_SQL, #Photo_Python, #Photo_VB, #Photo_CSharp, #Photo_XML {
+#Photo_CV, #Photo_CanStore, #Photo_HTML, #Photo_Javascript, #Photo_SQL, #Photo_Python, #Photo_VB, #Photo_CSharp, #Photo_XML {
     width: 75px;
     height: 75px;
 }
