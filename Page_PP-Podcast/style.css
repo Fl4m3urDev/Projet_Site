@@ -1,7 +1,7 @@
 /* Corps de la page */
 
 body {
-    background: url(images/Paysage_Bleu.png) no-repeat center fixed;
+    background: url(images/Darkness-red-blue-Galaxy.png) no-repeat center fixed;
     background-size: cover;
 }
 
@@ -24,9 +24,9 @@ body {
 
 /***************************************************************************************************************/
 
-/* "Bloc Podcast" */
+/* "Container Podcast" */
 
-.style_container_cybertrance_1,
+.style_container-first_cybertrance_1,
 .style_container_tst_1,
 .style_container_st_2,
 .style_container_ft_v2,
@@ -34,10 +34,12 @@ body {
 .style_container_aap3,
 .style_container_ttv1,
 .style_container_ttv2,
-.style_container_ttv3 {
+.style_container_ttv3 
+{
     padding-top: 50px;
     padding-bottom: 50px;
     padding-left: 50px;
+    margin-top: 20px;
     margin-left: 100px;
     margin-right: 100px;
     display: flex;
@@ -46,12 +48,12 @@ body {
     background-color: rgba(135, 207, 235, 0.75);
     border-radius: 50px;
     border-style: solid;
-    color: red;
+    color: black;
 }
 
 /***************************************************************************************************************/
 
-/* Photo Podcast */
+/* "Photo Podcast" */
 
 .photo_cybertrance_1,
 .photo_tst_1,
@@ -62,53 +64,97 @@ body {
 .photo_ttv1,
 .photo_ttv2,
 .photo_ttv3 {
-    width: 40%;
-    height: 40%;
+    width: 35%;
+    height: 35%;
 }
 
 /***************************************************************************************************************/
 
-/* Text Podcast */
+/* "Bloc Typical Podcast" */
 
-.text_cybertrance_1,
-.text_tst_1,
-.text_st_2,
-.text_aap3,
-.text_ttv1,
-.text_ttv2,
-.text_ttv3 {
-    color: black;
-    text-align: start;
+.style_typical_cybertrance_1,
+.style_typical_tst_1,
+.style_typical_st_2,
+.style_typical_ft_v2,
+.style_typical_mpp,
+.style_typical_aap3,
+.style_typical_ttv1,
+.style_typical_ttv2,
+.style_typical_ttv3
+{
+    margin-left: 2%;
+    display: flex;
+    flex-direction: column;
     font-size: 14px;
-    margin-left: 50px;
 }
 
-.text_ft_v2_cd1 {
+/***************************************************************************************************************/
+
+/* "Tracklisting Podcast" */
+
+.tracklist_cybertrance_1-main,
+.tracklist_ft_v2-main,
+.tracklist_mpp-main
+{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     color: black;
+    background-color: rgb(255, 2, 2, 0.5);
+    border-radius: 50px;
+    border-style: solid;
     text-align: start;
-    font-size: 10px;
-    margin-left: 50px;
+    font-size: 16px;
 }
 
-.text_ft_v2_cd2 {
+.tracklist_tst_1-main,
+.tracklist_st_2-main,
+.tracklist_aap3-main,
+.tracklist_ttv1-main,
+.tracklist_ttv2-main,
+.tracklist_ttv3-main
+{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    margin-top: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
     color: black;
+    background-color: rgb(255, 2, 2, 0.5);
+    border-radius: 50px;
+    border-style: solid;
     text-align: start;
-    font-size: 10px;
-    margin-left: 25px;
+    font-size: 16px;
 }
 
-.text_mpp_cd1 {
+.tracklist_cybertrance_1-first,
+.tracklist_cybertrance_1-second,
+.tracklist_tst_1-first,
+.tracklist_st_2-first,
+.tracklist_ft_v2-first,
+.tracklist_ft_v2-second,
+.tracklist_mpp-first,
+.tracklist_mpp-second,
+.tracklist_aap3-first,
+.tracklist_ttv1-first,
+.tracklist_ttv2-first,
+.tracklist_ttv3-first
+{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
     color: black;
-    text-align: start;
-    font-size: 10px;
-    margin-left: 50px;
-}
-
-.text_mpp_cd2 {
-    color: black;
-    text-align: start;
-    font-size: 10px;
-    margin-left: 15px;
+    border-style: solid;
 }
 
 /***************************************************************************************************************/
