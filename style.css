@@ -57,15 +57,14 @@ ul {
 /* "Bloc Tableau" */
 
 .container_tableau {
-    margin-left: 2%;
-    margin-right: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
-    margin-right: 10%;
-    margin-left: 10%;
     width: 80%;
 }
 
@@ -81,7 +80,7 @@ th {
     background-color: lightblue;
 }
 
-.rotate:hover {
+.simpson-guys:hover {
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
     -webkit-transform: rotate(-360deg);
@@ -219,7 +218,7 @@ th {
 
 .flex_deuxieme_container {
     display: flex;
-    flex-flow: row wrap;
+    flex-direction: row;
     justify-content: space-around;
     align-self: center;
 }
@@ -345,9 +344,135 @@ th {
 
 /* Responsive */
 
-@media screen {
-    /*coming soon*/
+@media screen and (max-width: 1280px) {
+
+    .premier_titre {
+        margin-left: 30%;
+        margin-right: 30%;
+    }
+    
+    .images-ciels {
+        width: 240px;
+        height: 140px;
+    }
+
+    .style_container_jeu {
+        font-size: 16px;
+    }
 }
 
+@media screen and (max-width: 980px) {
+
+    .premier_titre {
+        margin-left: 28%;
+        margin-right: 28%;
+        font-size: 30px;
+    }
+    
+    .flex_premier_container {
+        flex-wrap: wrap;
+    }
+    
+    .images-ciels {
+        margin: 2px;
+        width: 300px;
+        height: 200px;
+    }
+
+    .style_container_jeu {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-width: 680px) {
+
+    .premier_titre {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+    
+    td,
+    th {
+        padding: 5px;
+    }
+
+    .flex_premier_container {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    
+    .images-ciels {
+        width: 300px;
+        height: 200px;
+    }
+
+    .flex_deuxieme_container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #Photo_PaysageJap {
+        margin-left: 0%;
+    }
+
+    #Photo_Gauntlet_Dark_Legacy {
+        margin-top: 25px;
+        margin-right: 0%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .premier_titre {
+        margin-left: 12%;
+        margin-right: 12%;
+        font-size: 20px;
+    }
+
+    td,
+    th {
+        font-size: 12px;
+    }
+
+    .simpson-guys, .woman-switch {
+        width: 150px;
+        height: 150px;
+    }
+
+    #Photo_PaysageJap, #Photo_Gauntlet_Dark_Legacy {
+        width: 240px;
+        height: 170px;
+    }
+
+    .style_container_jeu {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .text_comingsoon {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+
+    .simpson-guys, .woman-switch {
+        width: 120px;
+        height: 120px;
+    }
+
+    .images-ciels {
+        width: 220px;
+        height: 130px;
+    }
+
+    .style_container_jeu {
+        font-size: 14px;
+    }
+}
 
 /***************************************************************************************************************/

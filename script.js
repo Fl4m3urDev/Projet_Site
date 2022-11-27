@@ -140,7 +140,7 @@ function ChangeImgClick() {
 // premier affichage
 loadDonnee();
 
-// recupère les images ciels
+// fonction permettant de recupérer les images ciels
 function loadDonnee() {
     fetch('ciels.json').then(function (response) {
         if (response.ok) {
@@ -185,7 +185,7 @@ function AffichageCiel(ciel) {
         image.src = "images_ciels/" + url;
         image.alt = "Ciel_Test";
 
-        // ces variables (défini au-dessus) permettant d'ajouter les elements du ciel dans le html.
+        // cette variable (défini au-dessus) permettant d'ajouter l'element du ciel dans le html.
         bloc.appendChild(image);
     }
 }
