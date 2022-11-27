@@ -1,0 +1,111 @@
+html {
+  background-image:
+    url('images/corn-the-best-mexican-fresh-produce-for-global-exports-5.png'),
+    url('images/high-resolution-food-clipart-collection-19.png'),
+    url('images/fruits-vegetables-artichoke-vector-graphic-pixabay-35.png'),
+    url('images/food-png-transparent-images-png-only-28.png');
+  background-repeat: repeat-x;
+  background-position:
+    0% 15%,
+    0% 40%,
+    0% 65%,
+    0% 85%;
+  background-size:
+    250px,
+    250px,
+    250px,
+    250px;
+  animation: 25s para infinite linear;
+}
+
+@keyframes para {
+  0% {
+    background-position:
+      0% 15%,
+      0% 40%,
+      0% 65%,
+      0% 85%;
+  }
+
+  100% {
+    background-position:
+      100% 15%,
+      -100% 40%,
+      100% 65%,
+      -100% 85%;
+  }
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+  background: url(icons/boite-de-conserve.png) no-repeat 0%, url(icons/boite-de-conserve.png) no-repeat 100%;
+  background-size: 50px, 50px;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+h1, h2 {
+  font-family: 'Cherry Swash', cursive;
+}
+
+.nutriscore_A {
+  color: rgb(249, 252, 250);
+  background-color: rgb(5, 99, 37);
+}
+
+.nutriscore_B {
+  color: rgb(2, 4, 20);
+  background-color: rgb(21, 230, 177);
+}
+
+.nutriscore_C {
+  color: rgb(4, 77, 28);
+  background-color: rgb(232, 248, 12);
+}
+
+.nutriscore_D {
+  color: rgb(249, 252, 250);
+  background-color: rgb(248, 184, 7);
+}
+
+.nutriscore_E {
+  color: rgb(249, 252, 250);
+  background-color: rgb(228, 126, 100);
+}
+
+.legumes {
+  background: rgb(25, 80, 4) url(icons/vegetable.png) no-repeat 2px 2px;
+  background-size: 24px 24px;
+}
+
+.viande {
+  background: rgb(82, 143, 82) url(icons/meat.png) no-repeat 2px 2px;
+  background-size: 24px 24px;
+}
+
+.soupe {
+  background: rgb(26, 126, 48) url(icons/soup.png) no-repeat 2px 2px;
+  background-size: 24px 24px;
+}
+
+/* Pour les Mobiles */
+@media screen and (max-width: 1000px) {
+
+  form {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 675px) {
+  
+  html {
+    background-image: none;
+  }
+
+}
+
+/*************************************************************************************************************/

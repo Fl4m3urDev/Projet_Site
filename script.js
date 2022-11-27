@@ -6,12 +6,6 @@ window.addEventListener('load', function () {
 
 /***************************************************************************************************************/
 
-// Constante pour la fonction de "positionnement aléatoire des images des beaux ciel"
-
-const max = 3;
-
-/***************************************************************************************************************/
-
 // Boîte de dialogue de Bienvenue (Heure Fixe) 
 
 var time = new Date().getHours();
@@ -143,19 +137,57 @@ function ChangeImgClick() {
 
 /***************************************************************************************************************/
 
-// Fonction permettant de charger les images des beaux ciel
+// premier affichage
+loadDonnee();
 
-function randomImgLoad() {
-    var tabImg = new Array();
-    tabImg[0] = "images/Ciel_Rouge.png";
-    tabImg[1] = "images/Ciel_Bleu.png";
-    tabImg[2] = "images/Ciel_Rose.png";
+// recupère les images ciels
+function loadDonnee() {
+    fetch('ciels.json').then(function (response) {
+        if (response.ok) {
+            response.json().then(function (json) {
+                AffichageCiel(json); // lancement asynchrone !
+            });
+        } else {
+            console.log('La demande de requête pour ciels.json a échoué ' + response.status + ': ' + response.statusText);
+        }
+    });
+}
 
-    var lTab = tabImg.length - 1;
+/***************************************************************************************************************/
 
-    document.getElementById('Photo_Ciel_Rouge').src = tabImg[getRandomInt(max)];
-    document.getElementById('Photo_Ciel_Bleu').src = tabImg[getRandomInt(max)];
-    document.getElementById('Photo_Ciel_Rose').src = tabImg[getRandomInt(max)];
+// fonction permettant sucessivement de melanger le positonnement des affichages des elements dans un tableaux.
+
+function MélangeTableau(ciels) {
+    for(var i = ciels.length-1 ; i>0 ;i--){
+        var j = Math.floor( Math.random() * (i + 1) );
+        [ciels[i],ciels[j]]=[ciels[j],ciels[i]];
+      }
+      return ciels;
+}
+
+/***************************************************************************************************************/
+
+// fonction permettant d'ajouter les ciels dans le html.
+
+function AffichageCiel(ciel) {
+
+    // déclaration de variables des elements qui composera le(s) ciel(s).
+    var bloc = document.getElementById("Photo_Ciel");
+    var items = ciel["items"];
+    MélangeTableau(items);
+    for (var i = 0; i < items.length; i++) {
+        var flickr_entry = items[i];
+        var url = flickr_entry.image;
+        bloc.className = "flex_premier_container";
+        var image = document.createElement('img');
+        image.className = "images-ciels";
+
+        image.src = "images_ciels/" + url;
+        image.alt = "Ciel_Test";
+
+        // ces variables (défini au-dessus) permettant d'ajouter les elements du ciel dans le html.
+        bloc.appendChild(image);
+    }
 }
 
 /***************************************************************************************************************/
