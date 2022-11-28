@@ -11,8 +11,8 @@ body {
 
 .premier_titre {
     margin-top: 20px;
-    margin-left: 37%;
-    margin-right: 37%;
+    margin-left: 35%;
+    margin-right: 35%;
     background-color: rgb(238, 255, 0);
     border-style: groove;
     border-color: cyan;
@@ -26,11 +26,11 @@ body {
 
 /* Style Bloc "ExoFlex" */
 
-.exo_flex {
+.exo_css {
     padding-top: 10px;
     padding-bottom: 10px;
-    margin-left: 37%;
-    margin-right: 37%;
+    margin-left: 35%;
+    margin-right: 35%;
     background-color: rgba(0, 255, 64, 0.6);
     border-style: solid;
     border-color: black;
@@ -45,6 +45,67 @@ body {
 .couleur_lien {
     color: black;
     text-decoration: none;
+}
+
+/***************************************************************************************************************/
+
+/* Responsive */
+
+@media screen and (max-width: 1280px) {
+
+    .premier_titre {
+        margin-left: 30%;
+        margin-right: 30%;
+    }
+
+    .exo_css {
+        margin-left: 30%;
+        margin-right: 30%;
+    }
+
+}
+
+@media screen and (max-width: 980px) {
+
+    .premier_titre {
+        margin-left: 22%;
+        margin-right: 22%;
+    }
+
+    .exo_css {
+        margin-left: 22%;
+        margin-right: 22%;
+    }
+
+}
+
+@media screen and (max-width: 680px) {
+
+    .premier_titre {
+        margin-left: 12%;
+        margin-right: 12%;
+    }
+
+    .exo_css {
+        margin-left: 12%;
+        margin-right: 12%;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    .premier_titre {
+        margin-left: 4%;
+        margin-right: 4%;
+        font-size: 22px;
+    }
+
+    .exo_css {
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+
 }
 
 /***************************************************************************************************************/

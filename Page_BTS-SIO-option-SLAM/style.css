@@ -1,7 +1,7 @@
 /* Corps de la page */
 
 body {
-    background: url(images/Binary_System-Code_Wallpaper.png) no-repeat center fixed; 
+    background: url(images/Binary_System-Code_Wallpaper.png) no-repeat center fixed;
     background-size: cover;
 }
 
@@ -21,8 +21,8 @@ body {
 .style_container_deuxieme {
     padding-top: 40px;
     padding-bottom: 40px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -36,19 +36,41 @@ body {
 
 /* Taille des Photos des Langages Informatique */
 
-#Photo_CV, #Photo_CanStore, #Photo_HTML, #Photo_Javascript, #Photo_SQL, #Photo_Python, #Photo_VB, #Photo_CSharp, #Photo_XML {
-    width: 75px;
-    height: 75px;
+#Photo_CV,
+#Photo_CanStore,
+#Photo_HTML,
+#Photo_CSS,
+#Photo_Javascript,
+#Photo_PHP,
+#Photo_SQL,
+#Photo_Python,
+#Photo_VB,
+#Photo_CSharp,
+#Photo_XML {
+    padding: 10px;
+}
+
+#Photo_CV,
+#Photo_CanStore,
+#Photo_HTML,
+#Photo_Javascript,
+#Photo_SQL,
+#Photo_Python,
+#Photo_VB,
+#Photo_CSharp,
+#Photo_XML {
+    width: 100px;
+    height: 100px;
 }
 
 #Photo_CSS {
-    width: 50px;
-    height: 75px;
+    width: 80px;
+    height: 100px;
 }
 
 #Photo_PHP {
-    width: 125px;
-    height: 75px;
+    width: 150px;
+    height: 100px;
 }
 
 /***************************************************************************************************************/
@@ -71,8 +93,63 @@ body {
 
 /* Responsive */
 
-@media screen {
-    /*coming soon*/
+@media screen and (max-width: 1280px) {
+
+    .style_container_deuxieme {
+        height: 350px;
+        flex-wrap: wrap;
+    }
+
+}
+
+@media screen and (max-width: 680px) {
+
+    .style_container_deuxieme {
+        margin-left: 100px;
+        margin-right: 100px;
+        padding: 20px;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        height: 150em;
+    }
+
+    #Photo_CV,
+    #Photo_CanStore,
+    #Photo_HTML,
+    #Photo_Javascript,
+    #Photo_SQL,
+    #Photo_Python,
+    #Photo_VB,
+    #Photo_CSharp,
+    #Photo_XML {
+        width: 125px;
+        height: 125px;
+    }
+
+    #Photo_CSS {
+        width: 90px;
+        height: 125px;
+    }
+
+    #Photo_PHP {
+        width: 200px;
+        height: 125px;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    .style_container_deuxieme {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .text_comingsoon {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
 }
 
 /***************************************************************************************************************/

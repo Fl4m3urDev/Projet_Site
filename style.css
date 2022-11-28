@@ -133,6 +133,15 @@ th {
     transition: color 1s;
 }
 
+#image_Beetlejuice,
+#image_Flandre_S,
+#image_Exortist_Screamer,
+#image_Aphex_Twin-ICBYD,
+#image_SCP087B-face,
+#image_Zombatar1 {
+    margin: 2px;
+}
+
 #image_Beetlejuice:hover {
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);

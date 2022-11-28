@@ -1,7 +1,7 @@
 /* Corps de la page */
 
 body {
-    background: url(images/Paysage_Bleu_Rotate.png) no-repeat center fixed; 
+    background: url(images/Paysage_Bleu_Rotate.png) no-repeat center fixed;
     background-size: cover;
 }
 
@@ -27,8 +27,10 @@ body {
 /* "Bloc Premier" */
 
 .style_container_premier {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 25px;
     margin-left: 20px;
     margin-right: 20px;
     display: flex;
@@ -61,8 +63,44 @@ body {
 
 /* Responsive */
 
-@media screen {
-    /*coming soon*/
+@media screen and (max-width: 1280px) {
+
+    .premier_titre {
+        margin-left: 34%;
+        margin-right: 34%;
+    }
+
+}
+
+@media screen and (max-width: 980px) {
+
+    .premier_titre {
+        margin-left: 30%;
+        margin-right: 30%;
+    }
+
+}
+
+@media screen and (max-width: 680px) {
+
+    .premier_titre {
+        margin-left: 22%;
+        margin-right: 22%;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    .premier_titre {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .text_comingsoon {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
 }
 
 /***************************************************************************************************************/
