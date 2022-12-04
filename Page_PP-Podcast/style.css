@@ -26,7 +26,7 @@ body {
 
 /* "Container Podcast" */
 
-.style_container-first_cybertrance_1,
+.style_container_cybertrance_1,
 .style_container_tst_1,
 .style_container_st_2,
 .style_container_ft_v2,
@@ -40,12 +40,12 @@ body {
     padding-bottom: 50px;
     padding-left: 50px;
     margin-top: 20px;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
     display: flex;
     flex-direction: row;
     justify-content: start;
-    background-color: rgba(135, 207, 235, 0.75);
+    background-color: rgba(0, 140, 255, 0.5);
     border-radius: 50px;
     border-style: solid;
     color: black;
@@ -97,19 +97,20 @@ body {
 .tracklist_mpp-main
 {
     padding-top: 50px;
+    padding-left: 25px;
+    padding-right: 25px;
     padding-bottom: 50px;
     margin-top: 20px;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     color: black;
     background-color: rgb(255, 2, 2, 0.5);
     border-radius: 50px;
     border-style: solid;
     text-align: start;
-    font-size: 16px;
 }
 
 .tracklist_tst_1-main,
@@ -123,8 +124,8 @@ body {
     padding-bottom: 50px;
     padding-left: 50px;
     margin-top: 20px;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
     display: flex;
     flex-direction: row;
     justify-content: start;
@@ -133,7 +134,6 @@ body {
     border-radius: 50px;
     border-style: solid;
     text-align: start;
-    font-size: 16px;
 }
 
 .tracklist_cybertrance_1-first,
@@ -155,6 +155,7 @@ body {
     background-color: whitesmoke;
     color: black;
     border-style: solid;
+    font-size: 14px;
 }
 
 /***************************************************************************************************************/
@@ -177,8 +178,261 @@ body {
 
 /* Responsive */
 
-@media screen {
-    /*coming soon*/
+@media screen and (max-width: 1366px) {
+
+    .style_container_cybertrance_1,
+    .style_container_tst_1,
+    .style_container_st_2,
+    .style_container_ft_v2,
+    .style_container_mpp,
+    .style_container_aap3,
+    .style_container_ttv1,
+    .style_container_ttv2,
+    .style_container_ttv3 
+    {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    .tracklist_cybertrance_1-main,
+    .tracklist_ft_v2-main,
+    .tracklist_mpp-main {
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    .tracklist_tst_1-main,
+    .tracklist_st_2-main,
+    .tracklist_aap3-main,
+    .tracklist_ttv1-main,
+    .tracklist_ttv2-main,
+    .tracklist_ttv3-main {
+        padding-left: 20px;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    .tracklist_cybertrance_1-first,
+    .tracklist_cybertrance_1-second,
+    .tracklist_tst_1-first,
+    .tracklist_st_2-first,
+    .tracklist_ft_v2-first,
+    .tracklist_ft_v2-second,
+    .tracklist_mpp-first,
+    .tracklist_mpp-second,
+    .tracklist_aap3-first,
+    .tracklist_ttv1-first,
+    .tracklist_ttv2-first,
+    .tracklist_ttv3-first {
+        padding: 8px;
+    }
+
 }
+
+@media screen and (max-width: 1280px) {
+
+    .premier_titre {
+        margin-left: 34%;
+        margin-right: 34%;
+    }
+
+    .style_container_cybertrance_1,
+    .style_container_tst_1,
+    .style_container_st_2,
+    .style_container_ft_v2,
+    .style_container_mpp,
+    .style_container_aap3,
+    .style_container_ttv1,
+    .style_container_ttv2,
+    .style_container_ttv3 
+    {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .tracklist_cybertrance_1-main,
+    .tracklist_tst_1-main,
+    .tracklist_st_2-main,
+    .tracklist_ft_v2-main,
+    .tracklist_mpp-main,
+    .tracklist_aap3-main,
+    .tracklist_ttv1-main,
+    .tracklist_ttv2-main,
+    .tracklist_ttv3-main {
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        flex-direction: column;
+    }
+
+    .tracklist_cybertrance_1-second,
+    .tracklist_ft_v2-second,
+    .tracklist_mpp-second {
+        margin-top: 15px;
+    }
+
+}
+
+@media screen and (max-width: 980px) {
+
+    .premier_titre {
+        margin-left: 30%;
+        margin-right: 30%;
+    }
+
+    .style_container_cybertrance_1,
+    .style_container_tst_1,
+    .style_container_st_2,
+    .style_container_ft_v2,
+    .style_container_mpp,
+    .style_container_aap3,
+    .style_container_ttv1,
+    .style_container_ttv2,
+    .style_container_ttv3 
+    {
+        padding-left: 20px;
+        padding-right: 20px;
+        flex-direction: column;
+        border-radius: 25px;
+    }
+
+    .style_typical_cybertrance_1,
+    .style_typical_tst_1,
+    .style_typical_st_2,
+    .style_typical_ft_v2,
+    .style_typical_mpp,
+    .style_typical_aap3,
+    .style_typical_ttv1,
+    .style_typical_ttv2,
+    .style_typical_ttv3 {
+        margin-top: 15px;
+        margin-left: 0px;
+    }
+
+    .tracklist_cybertrance_1-main,
+    .tracklist_tst_1-main,
+    .tracklist_st_2-main,
+    .tracklist_ft_v2-main,
+    .tracklist_mpp-main,
+    .tracklist_aap3-main,
+    .tracklist_ttv1-main,
+    .tracklist_ttv2-main,
+    .tracklist_ttv3-main {
+        padding-top: 25px;
+        padding-bottom: 25px;
+        border-radius: 25px;
+    }
+
+}
+
+@media screen and (max-width: 680px) {
+
+    .premier_titre {
+        margin-left: 22%;
+        margin-right: 22%;
+    }
+
+    .photo_cybertrance_1,
+    .photo_tst_1,
+    .photo_st_2,
+    .photo_ft_v2,
+    .photo_mpp,
+    .photo_aap3,
+    .photo_ttv1,
+    .photo_ttv2,
+    .photo_ttv3 {
+        width: 50%;
+        height: 50%;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    .premier_titre {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .style_container_cybertrance_1,
+    .style_container_tst_1,
+    .style_container_st_2,
+    .style_container_ft_v2,
+    .style_container_mpp,
+    .style_container_aap3,
+    .style_container_ttv1,
+    .style_container_ttv2,
+    .style_container_ttv3 
+    {
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .photo_cybertrance_1,
+    .photo_tst_1,
+    .photo_st_2,
+    .photo_ft_v2,
+    .photo_mpp,
+    .photo_aap3,
+    .photo_ttv1,
+    .photo_ttv2,
+    .photo_ttv3 {
+        width: 75%;
+        height: 75%;
+    }
+
+    .style_typical_cybertrance_1,
+    .style_typical_tst_1,
+    .style_typical_st_2,
+    .style_typical_ft_v2,
+    .style_typical_mpp,
+    .style_typical_aap3,
+    .style_typical_ttv1,
+    .style_typical_ttv2,
+    .style_typical_ttv3 {
+        font-size: 12px;
+    }
+
+    .tracklist_cybertrance_1-main,
+    .tracklist_tst_1-main,
+    .tracklist_st_2-main,
+    .tracklist_ft_v2-main,
+    .tracklist_mpp-main,
+    .tracklist_aap3-main,
+    .tracklist_ttv1-main,
+    .tracklist_ttv2-main,
+    .tracklist_ttv3-main {
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .tracklist_cybertrance_1-first,
+    .tracklist_cybertrance_1-second,
+    .tracklist_tst_1-first,
+    .tracklist_st_2-first,
+    .tracklist_ft_v2-first,
+    .tracklist_ft_v2-second,
+    .tracklist_mpp-first,
+    .tracklist_mpp-second,
+    .tracklist_aap3-first,
+    .tracklist_ttv1-first,
+    .tracklist_ttv2-first,
+    .tracklist_ttv3-first {
+        font-size: 12px;
+    }
+
+    .text_comingsoon {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+}
+
 
 /***************************************************************************************************************/

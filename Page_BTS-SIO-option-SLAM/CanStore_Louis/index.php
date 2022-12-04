@@ -108,7 +108,7 @@ if (empty($_POST)) {
           <!-- Affichage des produits -->
           <section class="' mb-4 card <?php echo $enregistrement->type; ?> '">
             <h2 class="d-flex justify-content-center mt-1 fs-6 text-warning"><?php echo ucfirst($enregistrement->nom); ?></h2>
-            <p class="d-flex card position-absolute text-warning p-3 px-2 mt-4 bg-success border border-warning rounded-circle"><?php echo number_format($enregistrement->prix, 2, ','); ?> €</p>
+            <p class="d-flex card position-absolute text-warning p-3 px-3 mt-4 bg-success border border-warning rounded-circle"><?php echo number_format($enregistrement->prix, 2, ','); ?></p>
             <img class="mb-2" src="images/<?php echo $enregistrement->image ?>" alt=" <?php echo $enregistrement->nom ?> ">
             <button name="addpanier" id="panier" class="d-grid w-75 mx-auto p-3 text-center btn btn-outline-dark bg-warning" onclick="ajouterPanier()">Acheter</button>
             <h3 class="fs-5 text-warning text-center ms-1 mt-3">Nutriscore :
