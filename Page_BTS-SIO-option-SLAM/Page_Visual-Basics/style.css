@@ -14,3 +14,43 @@
 }
 
 /***************************************************************************************************************/
+
+/* Responsive */
+
+@media screen and (max-width: 1280px) {
+
+    .premier_titre {
+        margin-left: 34%;
+        margin-right: 34%;
+    }
+
+}
+
+@media screen and (max-width: 980px) {
+
+    .premier_titre {
+        margin-left: 28%;
+        margin-right: 28%;
+    }
+
+}
+
+@media screen and (max-width: 680px) {
+
+    .premier_titre {
+        margin-left: 18%;
+        margin-right: 18%;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    .premier_titre {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+}
+
+/***************************************************************************************************************/
