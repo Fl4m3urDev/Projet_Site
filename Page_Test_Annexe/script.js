@@ -34,6 +34,9 @@ function ChangeImgClick() {
         Image_Id.src = "images/SC_Amu.png";
     }
     else if (Image_Id.src.match("images/SC_Amu.png")) {
+        Image_Id.src = "images/Sakura_Kinomoto.png";
+    }
+    else if (Image_Id.src.match("images/Sakura_Kinomoto.png")) {
         Image_Id.src = "images/Kilari.png";
     }
     else if (Image_Id.src.match("images/Kilari.png")) {
@@ -67,6 +70,9 @@ function ChangeImgClick() {
         Image_Id.src = "images/Komi_San.png";
     }
     else if (Image_Id.src.match("images/Komi_San.png")) {
+        Image_Id.src = "images/Ayame_Himuro.png";
+    }
+    else if (Image_Id.src.match("images/Ayame_Himuro.png")) {
         Image_Id.src = "images/Futaba_Igarashi.png";
     }
     else if (Image_Id.src.match("images/Futaba_Igarashi.png")) {
@@ -103,6 +109,9 @@ function ChangeImgClick() {
         Image_Id.src = "images/SD_CharlotteSpitz.png";
     }
     else if (Image_Id.src.match("images/SD_CharlotteSpitz.png")) {
+        Image_Id.src = "images/Megumin_Konosuba.png";
+    }
+    else if (Image_Id.src.match("images/Megumin_Konosuba.png")) {
         Image_Id.src = "images/Reimu_Hakurei.png";
     }
     else if (Image_Id.src.match("images/Reimu_Hakurei.png")) {
@@ -121,7 +130,6 @@ function ChangeImgClick() {
         Image_Id.src = "images/anime_girls_sexy.png";
     }
 }
-
 /***************************************************************************************************************/
 
 // premier affichage
