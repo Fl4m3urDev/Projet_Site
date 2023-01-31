@@ -73,6 +73,9 @@ function ChangeImgClick() {
         Image_Id.src = "images/Ayame_Himuro.png";
     }
     else if (Image_Id.src.match("images/Ayame_Himuro.png")) {
+        Image_Id.src = "images/RAGF_Mami_Nanami.png";
+    }
+    else if (Image_Id.src.match("images/RAGF_Mami_Nanami.png")) {
         Image_Id.src = "images/Futaba_Igarashi.png";
     }
     else if (Image_Id.src.match("images/Futaba_Igarashi.png")) {
