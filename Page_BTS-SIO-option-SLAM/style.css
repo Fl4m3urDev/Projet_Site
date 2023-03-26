@@ -1,7 +1,7 @@
 /* Corps de la page */
 
 body {
-    background: url(images/Binary_System-Code_Wallpaper.png) no-repeat center fixed;
+    background: url(images/Matrix_Effect.gif) no-repeat center fixed;
     background-size: cover;
 }
 
@@ -19,60 +19,28 @@ body {
 /* "Bloc Deuxième" */
 
 .style_container_deuxieme {
-    padding-top: 40px;
-    padding-bottom: 40px;
-    margin-left: 10px;
-    margin-right: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    background-color: rgba(0, 255, 64, 0.6);
-    border-radius: 50px;
-    border-style: solid;
+    background-color: rgba(14, 231, 43, 0.5);
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 24px;
     text-align: center;
+    color: black;
 }
 
 /***************************************************************************************************************/
 
-/* Taille des Photos des Langages Informatique */
+/* Taille des Photos des Projets BTS SIO option SLAM */
 
 #Photo_CV,
 #Photo_CanStore,
-#Photo_ChopesGames,
-#Photo_HTML,
-#Photo_CSS,
-#Photo_Javascript,
-#Photo_PHP,
-#Photo_SQL,
-#Photo_Python,
-#Photo_VB,
-#Photo_CSharp,
-#Photo_XML {
+#Photo_ChopesGames {
     padding: 10px;
-}
-
-#Photo_CV,
-#Photo_CanStore,
-#Photo_ChopesGames,
-#Photo_HTML,
-#Photo_Javascript,
-#Photo_SQL,
-#Photo_Python,
-#Photo_VB,
-#Photo_CSharp,
-#Photo_XML {
-    width: 100px;
-    height: 100px;
-}
-
-#Photo_CSS {
-    width: 80px;
-    height: 100px;
-}
-
-#Photo_PHP {
-    width: 150px;
-    height: 100px;
+    width: 300px;
+    height: 300px;
 }
 
 /***************************************************************************************************************/
@@ -97,9 +65,11 @@ body {
 
 @media screen and (max-width: 1280px) {
 
-    .style_container_deuxieme {
-        height: 350px;
-        flex-wrap: wrap;
+    #Photo_CV,
+    #Photo_CanStore,
+    #Photo_ChopesGames {
+        width: 200px;
+        height: 200px;
     }
 
 }
@@ -107,47 +77,22 @@ body {
 @media screen and (max-width: 680px) {
 
     .style_container_deuxieme {
-        margin-left: 100px;
-        margin-right: 100px;
         padding: 20px;
         flex-direction: column;
-        flex-wrap: nowrap;
         align-items: center;
-        height: 150em;
+        height: 30em;
     }
 
     #Photo_CV,
     #Photo_CanStore,
-    #Photo_ChopesGames,
-    #Photo_HTML,
-    #Photo_Javascript,
-    #Photo_SQL,
-    #Photo_Python,
-    #Photo_VB,
-    #Photo_CSharp,
-    #Photo_XML {
+    #Photo_ChopesGames {
         width: 125px;
-        height: 125px;
-    }
-
-    #Photo_CSS {
-        width: 90px;
-        height: 125px;
-    }
-
-    #Photo_PHP {
-        width: 200px;
         height: 125px;
     }
 
 }
 
 @media screen and (max-width: 480px) {
-
-    .style_container_deuxieme {
-        margin-left: 20px;
-        margin-right: 20px;
-    }
 
     .text_comingsoon {
         margin-left: 25px;

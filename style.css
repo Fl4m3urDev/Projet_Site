@@ -1,39 +1,44 @@
-/* Corps de la page */
-
-body {
+.premier_container {
     background: url(images/The_Death_Matrix_Background.png) no-repeat center fixed; 
     background-size: cover;
+    padding: 400px;
+}
+
+.container_text {
+  text-align: center;
+  color: white;
 }
 
 /***************************************************************************************************************/
 
-/* Premier Titre */
-
-.premier_titre {
-    margin-left: 25%;
-    margin-right: 25%;
-    padding: 10px;
-    background-color: red;
-    border-style: solid;
-    color: black;
-    text-align: center;
-    font-family: 'Comic Sans MS', sans-serif;
+.deuxieme_container {
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
 }
 
 /***************************************************************************************************************/
 
-/* Texte "Coming Soon" */
+.troisieme_container {
+  background: url(images/Binary_System-Code_Wallpaper.png) no-repeat center fixed; 
+  background-size: cover;
+  padding: 500px;
+}
 
-.text_comingsoon {
-    background-color: rgb(238, 255, 0);
-    border-style: groove;
-    border-color: cyan;
-    margin-left: 100px;
-    margin-right: 100px;
-    color: rgb(255, 0, 0);
-    font-size: 30px;
-    font-family: 'Times New Roman', Times, serif;
-    text-align: center;
+/***************************************************************************************************************/
+
+.quatrieme_container {
+  display: flex;
+  flex-flow: column wrap;
+  height: 50%;
+  font-family: Verdana, Geneva, sans-serif;
+  text-align: center;
+}
+
+/***************************************************************************************************************/
+
+.cinquieme_container {
+  background-color: black;
+  color: white;
 }
 
 /***************************************************************************************************************/
@@ -42,44 +47,18 @@ body {
 
 @media screen and (max-width: 1280px) {
 
-    .premier_titre {
-        margin-left: 20%;
-        margin-right: 20%;
-    }
-
 }
 
 @media screen and (max-width: 980px) {
 
-    .premier_titre {
-        margin-left: 14%;
-        margin-right: 14%;
-        font-size: 30px;
-    }
-    
 }
 
 @media screen and (max-width: 680px) {
 
-    .premier_titre {
-        margin-left: 10%;
-        margin-right: 10%;
-    }
-    
 }
 
 @media screen and (max-width: 480px) {
 
-    .premier_titre {
-        margin-left: 12%;
-        margin-right: 12%;
-        font-size: 20px;
-    }
-
-    .text_comingsoon {
-        margin-left: 25px;
-        margin-right: 25px;
-    }
 }
 
 /***************************************************************************************************************/
