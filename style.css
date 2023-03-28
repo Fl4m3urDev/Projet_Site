@@ -1,7 +1,8 @@
 .premier_container {
     background: url(images/The_Death_Matrix_Background.png) no-repeat center fixed; 
     background-size: cover;
-    padding: 400px;
+    padding-top: 400px;
+    padding-bottom: 400px;
 }
 
 .container_text {
@@ -21,7 +22,8 @@
 .troisieme_container {
   background: url(images/Binary_System-Code_Wallpaper.png) no-repeat center fixed; 
   background-size: cover;
-  padding: 500px;
+  padding-top: 500px;
+  padding-bottom: 500px;
 }
 
 /***************************************************************************************************************/
@@ -29,7 +31,6 @@
 .quatrieme_container {
   display: flex;
   flex-flow: column wrap;
-  height: 50%;
   font-family: Verdana, Geneva, sans-serif;
   text-align: center;
 }
@@ -37,8 +38,33 @@
 /***************************************************************************************************************/
 
 .cinquieme_container {
+  background: url(images/Matrix_Effect.gif) no-repeat center fixed; 
+  background-size: cover;
+  padding-top: 300px;
+  padding-bottom: 300px;
+}
+
+/***************************************************************************************************************/
+
+.sixieme_container {
   background-color: black;
-  color: white;
+  font-family: Verdana, Geneva, sans-serif;
+  text-align: center;
+  color: forestgreen;
+}
+
+.septieme_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: beige;
+  font-family: Verdana, Geneva, sans-serif;
+  text-align: center;
+}
+
+.huitieme_container {
+  background-color: black;
+  padding: 10px;
 }
 
 /***************************************************************************************************************/
@@ -54,6 +80,11 @@
 }
 
 @media screen and (max-width: 680px) {
+
+  .septieme_container {
+    flex-direction: column;
+    justify-content: none;
+  }
 
 }
 
