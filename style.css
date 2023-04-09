@@ -1,25 +1,19 @@
-.premier_container {
+.container_TheDM_Background {
     background: url(images/The_Death_Matrix_Background.png) no-repeat center fixed; 
     background-size: cover;
     padding-top: 400px;
     padding-bottom: 400px;
 }
 
-.container_text {
-  text-align: center;
-  color: white;
-}
-
 /***************************************************************************************************************/
 
-.deuxieme_container {
+.container_presentation, .container_realisation {
   font-family: 'Times New Roman', Times, serif;
-  text-align: center;
 }
 
 /***************************************************************************************************************/
 
-.troisieme_container {
+.container_BSC_Background {
   background: url(images/Binary_System-Code_Wallpaper.png) no-repeat center fixed; 
   background-size: cover;
   padding-top: 500px;
@@ -28,43 +22,35 @@
 
 /***************************************************************************************************************/
 
-.quatrieme_container {
+.container_title_LI, .container_title_PG, .container_PG {
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+/***************************************************************************************************************/
+
+.container_LI {
   display: flex;
-  flex-flow: column wrap;
-  font-family: Verdana, Geneva, sans-serif;
-  text-align: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  font-family: Verdana, Geneva, sans-serif
 }
 
 /***************************************************************************************************************/
 
-.cinquieme_container {
-  background: url(images/Matrix_Effect.gif) no-repeat center fixed; 
-  background-size: cover;
-  padding-top: 300px;
-  padding-bottom: 300px;
-}
-
-/***************************************************************************************************************/
-
-.sixieme_container {
-  background-color: black;
-  font-family: Verdana, Geneva, sans-serif;
-  text-align: center;
-  color: forestgreen;
-}
-
-.septieme_container {
+.container_PG {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  background-color: beige;
-  font-family: Verdana, Geneva, sans-serif;
-  text-align: center;
 }
 
-.huitieme_container {
-  background-color: black;
-  padding: 10px;
+/***************************************************************************************************************/
+
+.container_ME_Background {
+  background: url(images/Matrix_Effect.gif) no-repeat center fixed; 
+  background-size: cover;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 /***************************************************************************************************************/
@@ -77,11 +63,16 @@
 
 @media screen and (max-width: 980px) {
 
+  .container_LI {
+    flex-direction: column;
+    justify-content: none;
+  }
+
 }
 
 @media screen and (max-width: 680px) {
 
-  .septieme_container {
+  .container_PG {
     flex-direction: column;
     justify-content: none;
   }
