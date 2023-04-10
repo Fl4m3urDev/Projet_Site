@@ -14,12 +14,10 @@ body {
     margin-right: 38%;
     background-color: greenyellow;
     border-style: groove;
-    border-radius: 20px;
     border-color: orangered;
     color: purple;
     font-size: 30px;
     font-family: 'Comic Sans MS', sans-serif;
-    text-align: center;
 }
 
 /***************************************************************************************************************/
@@ -27,20 +25,9 @@ body {
 /* "Bloc Premier" */
 
 .style_container_premier {
-    padding-top: 25px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 25px;
     margin-left: 20px;
     margin-right: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    background-color: rgba(135, 207, 235, 0.75);
-    border-radius: 50px;
     border-style: solid;
-    text-align: center;
-    color: red;
 }
 
 /***************************************************************************************************************/
@@ -48,15 +35,11 @@ body {
 /* Texte "Coming Soon" */
 
 .text_comingsoon {
-    background-color: rgb(238, 255, 0);
     border-style: groove;
-    border-color: cyan;
     margin-left: 100px;
     margin-right: 100px;
-    color: rgb(255, 0, 0);
     font-size: 30px;
     font-family: 'Times New Roman', Times, serif;
-    text-align: center;
 }
 
 /***************************************************************************************************************/
