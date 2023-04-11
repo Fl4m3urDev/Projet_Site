@@ -14,44 +14,24 @@ body {
     margin-right: 38%;
     background-color: greenyellow;
     border-style: groove;
-    border-radius: 20px;
     border-color: orangered;
     color: purple;
     font-size: 30px;
     font-family: 'Comic Sans MS', sans-serif;
-    text-align: center;
 }
 
 /***************************************************************************************************************/
 
 /* "Container Podcast" */
 
-.style_container_cybertrance_1,
-.style_container_tst_1,
-.style_container_st_2,
-.style_container_ft_v2,
-.style_container_mpp,
-.style_container_aap1,
-.style_container_aap2,
-.style_container_aap3,
-.style_container_fabric09,
-.style_container_ttv1,
-.style_container_ttv2,
-.style_container_ttv3 
-{
-    padding-top: 50px;
-    padding-bottom: 50px;
-    padding-left: 50px;
-    margin-top: 20px;
-    margin-left: 50px;
-    margin-right: 50px;
+.container_podcast {
+    margin-left: 20px;
+    margin-right: 20px;
     display: flex;
     flex-direction: row;
-    justify-content: start;
-    background-color: rgba(0, 140, 255, 0.5);
-    border-radius: 50px;
+    flex-wrap: wrap;
+    justify-content: space-around;
     border-style: solid;
-    color: black;
 }
 
 /***************************************************************************************************************/
@@ -59,9 +39,21 @@ body {
 /* "Photo Podcast" */
 
 .photo_cybertrance_1,
+.photo_cybertrance_2,
+.photo_cybertrance_3,
+.photo_cybertrance_4,
+.photo_cybertrance_5,
+.photo_cybertrance_6,
 .photo_tst_1,
 .photo_st_2,
 .photo_ft_v2,
+.photo_rxxistance_1,
+.photo_rxxistance_2,
+.photo_rxxistance_3,
+.photo_rxxistance_4,
+.photo_sdm1,
+.photo_sdm2,
+.photo_sdm3,
 .photo_mpp,
 .photo_aap1,
 .photo_aap2,
@@ -70,83 +62,13 @@ body {
 .photo_ttv1,
 .photo_ttv2,
 .photo_ttv3 {
-    width: 35%;
-    height: 35%;
-}
-
-/***************************************************************************************************************/
-
-/* "Bloc Typical Podcast" */
-
-.style_typical_cybertrance_1,
-.style_typical_tst_1,
-.style_typical_st_2,
-.style_typical_ft_v2,
-.style_typical_mpp,
-.style_typical_aap1,
-.style_typical_aap2,
-.style_typical_aap3,
-.style_typical_fabric09,
-.style_typical_ttv1,
-.style_typical_ttv2,
-.style_typical_ttv3
-{
-    margin-left: 2%;
-    display: flex;
-    flex-direction: column;
-    font-size: 14px;
+    width: 325px;
+    height: 325px;
 }
 
 /***************************************************************************************************************/
 
 /* "Tracklisting Podcast" */
-
-.tracklist_cybertrance_1-main,
-.tracklist_ft_v2-main,
-.tracklist_mpp-main
-{
-    padding-top: 50px;
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-bottom: 50px;
-    margin-top: 20px;
-    margin-left: 50px;
-    margin-right: 50px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    color: black;
-    background-color: rgb(255, 2, 2, 0.5);
-    border-radius: 50px;
-    border-style: solid;
-    text-align: start;
-}
-
-.tracklist_tst_1-main,
-.tracklist_st_2-main,
-.tracklist_aap1-main,
-.tracklist_aap2-main,
-.tracklist_aap3-main,
-.tracklist_fabric09-main,
-.tracklist_ttv1-main,
-.tracklist_ttv2-main,
-.tracklist_ttv3-main
-{
-    padding-top: 50px;
-    padding-bottom: 50px;
-    padding-left: 50px;
-    margin-top: 20px;
-    margin-left: 50px;
-    margin-right: 50px;
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    color: black;
-    background-color: rgb(255, 2, 2, 0.5);
-    border-radius: 50px;
-    border-style: solid;
-    text-align: start;
-}
 
 .tracklist_cybertrance_1-first,
 .tracklist_cybertrance_1-second,
@@ -178,15 +100,11 @@ body {
 /* Texte "Coming Soon" */
 
 .text_comingsoon {
-    background-color: rgb(238, 255, 0);
     border-style: groove;
-    border-color: cyan;
     margin-left: 100px;
     margin-right: 100px;
-    color: rgb(255, 0, 0);
     font-size: 30px;
     font-family: 'Times New Roman', Times, serif;
-    text-align: center;
 }
 
 /***************************************************************************************************************/
@@ -194,46 +112,6 @@ body {
 /* Responsive */
 
 @media screen and (max-width: 1366px) {
-
-    .style_container_cybertrance_1,
-    .style_container_tst_1,
-    .style_container_st_2,
-    .style_container_ft_v2,
-    .style_container_mpp,
-    .style_container_aap1,
-    .style_container_aap2,
-    .style_container_aap3,
-    .style_container_fabric09,
-    .style_container_ttv1,
-    .style_container_ttv2,
-    .style_container_ttv3 
-    {
-        margin-left: 25px;
-        margin-right: 25px;
-    }
-
-    .tracklist_cybertrance_1-main,
-    .tracklist_ft_v2-main,
-    .tracklist_mpp-main {
-        padding-left: 20px;
-        padding-right: 20px;
-        margin-left: 25px;
-        margin-right: 25px;
-    }
-
-    .tracklist_tst_1-main,
-    .tracklist_st_2-main,
-    .tracklist_aap1-main,
-    .tracklist_aap2-main,
-    .tracklist_aap3-main,
-    .tracklist_fabric09-main,
-    .tracklist_ttv1-main,
-    .tracklist_ttv2-main,
-    .tracklist_ttv3-main {
-        padding-left: 20px;
-        margin-left: 25px;
-        margin-right: 25px;
-    }
 
     .tracklist_cybertrance_1-first,
     .tracklist_cybertrance_1-second,
@@ -262,42 +140,6 @@ body {
         margin-right: 34%;
     }
 
-    .style_container_cybertrance_1,
-    .style_container_tst_1,
-    .style_container_st_2,
-    .style_container_ft_v2,
-    .style_container_mpp,
-    .style_container_aap1,
-    .style_container_aap2,
-    .style_container_aap3,
-    .style_container_fabric09,
-    .style_container_ttv1,
-    .style_container_ttv2,
-    .style_container_ttv3 
-    {
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-
-    .tracklist_cybertrance_1-main,
-    .tracklist_tst_1-main,
-    .tracklist_st_2-main,
-    .tracklist_ft_v2-main,
-    .tracklist_mpp-main,
-    .tracklist_aap1-main,
-    .tracklist_aap2-main,
-    .tracklist_aap3-main,
-    .tracklist_fabric09-main,
-    .tracklist_ttv1-main,
-    .tracklist_ttv2-main,
-    .tracklist_ttv3-main {
-        padding-left: 20px;
-        padding-right: 20px;
-        margin-left: 20px;
-        margin-right: 20px;
-        flex-direction: column;
-    }
-
     .tracklist_cybertrance_1-second,
     .tracklist_ft_v2-second,
     .tracklist_mpp-second {
@@ -313,58 +155,6 @@ body {
         margin-right: 30%;
     }
 
-    .style_container_cybertrance_1,
-    .style_container_tst_1,
-    .style_container_st_2,
-    .style_container_ft_v2,
-    .style_container_mpp,
-    .style_container_aap1,
-    .style_container_aap2,
-    .style_container_aap3,
-    .style_container_fabric09,
-    .style_container_ttv1,
-    .style_container_ttv2,
-    .style_container_ttv3 
-    {
-        padding-left: 20px;
-        padding-right: 20px;
-        flex-direction: column;
-        border-radius: 25px;
-    }
-
-    .style_typical_cybertrance_1,
-    .style_typical_tst_1,
-    .style_typical_st_2,
-    .style_typical_ft_v2,
-    .style_typical_mpp,
-    .style_typical_aap1,
-    .style_typical_aap2,
-    .style_typical_aap3,
-    .style_typical_fabric09,
-    .style_typical_ttv1,
-    .style_typical_ttv2,
-    .style_typical_ttv3 {
-        margin-top: 15px;
-        margin-left: 0px;
-    }
-
-    .tracklist_cybertrance_1-main,
-    .tracklist_tst_1-main,
-    .tracklist_st_2-main,
-    .tracklist_ft_v2-main,
-    .tracklist_mpp-main,
-    .tracklist_aap1-main,
-    .tracklist_aap2-main,
-    .tracklist_aap3-main,
-    .tracklist_fabric09-main,
-    .tracklist_ttv1-main,
-    .tracklist_ttv2-main,
-    .tracklist_ttv3-main {
-        padding-top: 25px;
-        padding-bottom: 25px;
-        border-radius: 25px;
-    }
-
 }
 
 @media screen and (max-width: 680px) {
@@ -372,22 +162,6 @@ body {
     .premier_titre {
         margin-left: 22%;
         margin-right: 22%;
-    }
-
-    .photo_cybertrance_1,
-    .photo_tst_1,
-    .photo_st_2,
-    .photo_ft_v2,
-    .photo_mpp,
-    .photo_aap1,
-    .photo_aap2,
-    .photo_aap3,
-    .photo_fabric09,
-    .photo_ttv1,
-    .photo_ttv2,
-    .photo_ttv3 {
-        width: 50%;
-        height: 50%;
     }
 
 }
@@ -399,29 +173,22 @@ body {
         margin-right: 5%;
     }
 
-    .style_container_cybertrance_1,
-    .style_container_tst_1,
-    .style_container_st_2,
-    .style_container_ft_v2,
-    .style_container_mpp,
-    .style_container_aap1,
-    .style_container_aap2,
-    .style_container_aap3,
-    .style_container_fabric09,
-    .style_container_ttv1,
-    .style_container_ttv2,
-    .style_container_ttv3 
-    {
-        padding-left: 10px;
-        padding-right: 10px;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-
     .photo_cybertrance_1,
+    .photo_cybertrance_2,
+    .photo_cybertrance_3,
+    .photo_cybertrance_4,
+    .photo_cybertrance_5,
+    .photo_cybertrance_6,
     .photo_tst_1,
     .photo_st_2,
     .photo_ft_v2,
+    .photo_rxxistance_1,
+    .photo_rxxistance_2,
+    .photo_rxxistance_3,
+    .photo_rxxistance_4,
+    .photo_sdm1,
+    .photo_sdm2,
+    .photo_sdm3,
     .photo_mpp,
     .photo_aap1,
     .photo_aap2,
@@ -430,41 +197,8 @@ body {
     .photo_ttv1,
     .photo_ttv2,
     .photo_ttv3 {
-        width: 75%;
-        height: 75%;
-    }
-
-    .style_typical_cybertrance_1,
-    .style_typical_tst_1,
-    .style_typical_st_2,
-    .style_typical_ft_v2,
-    .style_typical_mpp,
-    .style_typical_aap1,
-    .style_typical_aap2,
-    .style_typical_aap3,
-    .style_typical_fabric09,
-    .style_typical_ttv1,
-    .style_typical_ttv2,
-    .style_typical_ttv3 {
-        font-size: 12px;
-    }
-
-    .tracklist_cybertrance_1-main,
-    .tracklist_tst_1-main,
-    .tracklist_st_2-main,
-    .tracklist_ft_v2-main,
-    .tracklist_mpp-main,
-    .tracklist_aap1-main,
-    .tracklist_aap2-main,
-    .tracklist_aap3-main,
-    .tracklist_fabric09-main,
-    .tracklist_ttv1-main,
-    .tracklist_ttv2-main,
-    .tracklist_ttv3-main {
-        padding-left: 10px;
-        padding-right: 10px;
-        margin-left: 10px;
-        margin-right: 10px;
+        width: 225px;
+        height: 225px;
     }
 
     .tracklist_cybertrance_1-first,
