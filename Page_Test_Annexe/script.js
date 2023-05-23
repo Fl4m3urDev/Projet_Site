@@ -46,6 +46,9 @@ function ChangeImgClick() {
         Image_Id.src = "images/FT_Lucy.png";
     }
     else if (Image_Id.src.match("images/FT_Lucy.png")) {
+        Image_Id.src = "images/EZ_Rebecca.png";
+    }
+    else if (Image_Id.src.match("images/EZ_Rebecca.png")) {
         Image_Id.src = "images/Ayu_Tsukimiya.png";
     }
     else if (Image_Id.src.match("images/Ayu_Tsukimiya.png")) {
@@ -79,6 +82,9 @@ function ChangeImgClick() {
         Image_Id.src = "images/Futaba_Igarashi.png";
     }
     else if (Image_Id.src.match("images/Futaba_Igarashi.png")) {
+        Image_Id.src = "images/TCIAG_Carol_Olston.png";
+    }
+    else if (Image_Id.src.match("images/TCIAG_Carol_Olston.png")) {
         Image_Id.src = "images/Kizuna_AI.png";
     }
     else if (Image_Id.src.match("images/Kizuna_AI.png")) {

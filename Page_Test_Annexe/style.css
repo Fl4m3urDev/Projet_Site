@@ -321,22 +321,6 @@ th {
 
 /***************************************************************************************************************/
 
-/* Texte "Coming Soon" */
-
-.text_comingsoon {
-    background-color: rgb(238, 255, 0);
-    border-style: groove;
-    border-color: cyan;
-    margin-left: 100px;
-    margin-right: 100px;
-    color: rgb(255, 0, 0);
-    font-size: 30px;
-    font-family: 'Times New Roman', Times, serif;
-    text-align: center;
-}
-
-/***************************************************************************************************************/
-
 /* Pied de Page */
 
 .style_container_piedpage {
@@ -460,10 +444,6 @@ th {
         margin-right: 5px;
     }
 
-    .text_comingsoon {
-        margin-left: 25px;
-        margin-right: 25px;
-    }
 }
 
 @media screen and (max-width: 380px) {

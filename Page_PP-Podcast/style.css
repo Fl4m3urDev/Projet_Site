@@ -112,18 +112,6 @@ body {
 
 /***************************************************************************************************************/
 
-/* Texte "Coming Soon" */
-
-.text_comingsoon {
-    border-style: groove;
-    margin-left: 100px;
-    margin-right: 100px;
-    font-size: 30px;
-    font-family: 'Times New Roman', Times, serif;
-}
-
-/***************************************************************************************************************/
-
 /* Responsive */
 
 @media screen and (max-width: 1366px) {
@@ -258,10 +246,6 @@ body {
         font-size: 12px;
     }
 
-    .text_comingsoon {
-        margin-left: 25px;
-        margin-right: 25px;
-    }
 }
 
 
