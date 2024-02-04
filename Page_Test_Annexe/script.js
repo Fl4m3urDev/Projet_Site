@@ -159,14 +159,14 @@ function loadDonnee() {
 
 /***************************************************************************************************************/
 
-// fonction permettant sucessivement de melanger le positonnement des affichages des elements dans un tableaux.
+// fonction permettant sucessivement de melanger le positonnement des affichages des elements dans un tableau.
 
 function MélangeTableau(ciels) {
-    for(var i = ciels.length-1 ; i>0 ;i--){
+    for(var i = ciels.length-1; i>0; i--){
         var j = Math.floor( Math.random() * (i + 1) );
         [ciels[i],ciels[j]]=[ciels[j],ciels[i]];
-      }
-      return ciels;
+    }
+    return ciels;
 }
 
 /***************************************************************************************************************/
