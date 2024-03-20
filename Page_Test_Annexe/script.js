@@ -1,4 +1,4 @@
-// Test fonction JS
+// test fonction JS
 
 window.addEventListener('load', function () {
     console.log('Cette fonction est éxécutée une fois quand la page est chargée.');
@@ -6,7 +6,7 @@ window.addEventListener('load', function () {
 
 /***************************************************************************************************************/
 
-// Fonction permetttant de retourner un nombre flottant pseudo-aléatoire compris dans l'intervalle [0, 1[
+// fonction permetttant de retourner un nombre flottant pseudo-aléatoire compris dans l'intervalle [0, 1[
 
 function getRandomInt(max) {
     return Math.floor(Math.random() * max);
@@ -14,129 +14,159 @@ function getRandomInt(max) {
 
 /***************************************************************************************************************/
 
-// Fonction permettant de changer l'image de la 'femme japonaise" en un clic et ainsi de suite...
+// fonction permettant de changer l'image de la 'femme japonaise" en un clic et ainsi de suite...
 
 function ChangeImgClick() {
     var Image_Id = document.getElementById('imggirl');
-    if (Image_Id.src.match("images/anime_girls_sexy.png")) {
-        Image_Id.src = "images/ffn_girl.png";
+    if (Image_Id.src.match("images_girls/anime_girls_sexy.png")) {
+        Image_Id.src = "images_girls/ffn_girl.png";
     }
-    else if (Image_Id.src.match("images/ffn_girl.png")) {
-        Image_Id.src = "images/Sailor_Moon.png";
+    else if (Image_Id.src.match("images_girls/ffn_girl.png")) {
+        Image_Id.src = "images_girls/Nazuna_Nanakusa_cotn.png";
     }
-    else if (Image_Id.src.match("images/Sailor_Moon.png")) {
-        Image_Id.src = "images/TMM_Zoey.png";
+    else if (Image_Id.src.match("images_girls/Nazuna_Nanakusa_cotn.png")) {
+        Image_Id.src = "images_girls/Akira_Asai_cotn.png";
     }
-    else if (Image_Id.src.match("images/TMM_Zoey.png")) {
-        Image_Id.src = "images/MD_Doremi.png";
+    else if (Image_Id.src.match("images_girls/Akira_Asai_cotn.png")) {
+        Image_Id.src = "images_girls/Yuko_Kanoe_dmoa.png";
     }
-    else if (Image_Id.src.match("images/MD_Doremi.png")) {
-        Image_Id.src = "images/SC_Amu.png";
+    else if (Image_Id.src.match("images_girls/Yuko_Kanoe_dmoa.png")) {
+        Image_Id.src = "images_girls/FT_Lucy.png";
     }
-    else if (Image_Id.src.match("images/SC_Amu.png")) {
-        Image_Id.src = "images/Sakura_Kinomoto.png";
+    else if (Image_Id.src.match("images_girls/FT_Lucy.png")) {
+        Image_Id.src = "images_girls/EZ_Rebecca.png";
     }
-    else if (Image_Id.src.match("images/Sakura_Kinomoto.png")) {
-        Image_Id.src = "images/Kilari.png";
+    else if (Image_Id.src.match("images_girls/EZ_Rebecca.png")) {
+        Image_Id.src = "images_girls/Ayu_Tsukimiya.png";
     }
-    else if (Image_Id.src.match("images/Kilari.png")) {
-        Image_Id.src = "images/Lucie_PPP.png";
+    else if (Image_Id.src.match("images_girls/Ayu_Tsukimiya.png")) {
+        Image_Id.src = "images_girls/The_Quintessential_Quintuplets.png";
     }
-    else if (Image_Id.src.match("images/Lucie_PPP.png")) {
-        Image_Id.src = "images/FT_Lucy.png";
+    else if (Image_Id.src.match("images_girls/The_Quintessential_Quintuplets.png")) {
+        Image_Id.src = "images_girls/Nagatoro.gif";
     }
-    else if (Image_Id.src.match("images/FT_Lucy.png")) {
-        Image_Id.src = "images/EZ_Rebecca.png";
+    else if (Image_Id.src.match("images_girls/Nagatoro.gif")) {
+        Image_Id.src = "images_girls/Marin_Kitagawa_MDUD.png";
     }
-    else if (Image_Id.src.match("images/EZ_Rebecca.png")) {
-        Image_Id.src = "images/Ayu_Tsukimiya.png";
+    else if (Image_Id.src.match("images_girls/Marin_Kitagawa_MDUD.png")) {
+        Image_Id.src = "images_girls/Marin_Kitagawa_2_MDUD.png";
     }
-    else if (Image_Id.src.match("images/Ayu_Tsukimiya.png")) {
-        Image_Id.src = "images/mkdm_tohru.png";
+    else if (Image_Id.src.match("images_girls/Marin_Kitagawa_2_MDUD.png")) {
+        Image_Id.src = "images_girls/Shikimori_Micchon.png";
     }
-    else if (Image_Id.src.match("images/mkdm_tohru.png")) {
-        Image_Id.src = "images/The_Quintessential_Quintuplets.png";
+    else if (Image_Id.src.match("images_girls/Shikimori_Micchon.png")) {
+        Image_Id.src = "images_girls/Komi_Shoko_kcc.png";
     }
-    else if (Image_Id.src.match("images/The_Quintessential_Quintuplets.png")) {
-        Image_Id.src = "images/Nagatoro.gif";
+    else if (Image_Id.src.match("images_girls/Komi_Shoko_kcc.png")) {
+        Image_Id.src = "images_girls/Najimi_Osana_kcc.png";
     }
-    else if (Image_Id.src.match("images/Nagatoro.gif")) {
-        Image_Id.src = "images/Marin_Kitagawa_MDUD.png";
+    else if (Image_Id.src.match("images_girls/Najimi_Osana_kcc.png")) {
+        Image_Id.src = "images_girls/Miko_Yotsuya_mc.png";
     }
-    else if (Image_Id.src.match("images/Marin_Kitagawa_MDUD.png")) {
-        Image_Id.src = "images/Marin_Kitagawa_2_MDUD.png";
+    else if (Image_Id.src.match("images_girls/Miko_Yotsuya_mc.png")) {
+        Image_Id.src = "images_girls/Shizuka_Mikazuki_z100blotd.png";
     }
-    else if (Image_Id.src.match("images/Marin_Kitagawa_2_MDUD.png")) {
-        Image_Id.src = "images/Shikimori_Micchon.png";
+    else if (Image_Id.src.match("images_girls/Shizuka_Mikazuki_z100blotd.png")) {
+        Image_Id.src = "images_girls/Ayame_Himuro.png";
     }
-    else if (Image_Id.src.match("images/Shikimori_Micchon.png")) {
-        Image_Id.src = "images/Komi_San.png";
+    else if (Image_Id.src.match("images_girls/Ayame_Himuro.png")) {
+        Image_Id.src = "images_girls/RAGF_Mami_Nanami.png";
     }
-    else if (Image_Id.src.match("images/Komi_San.png")) {
-        Image_Id.src = "images/Ayame_Himuro.png";
+    else if (Image_Id.src.match("images_girls/RAGF_Mami_Nanami.png")) {
+        Image_Id.src = "images_girls/Futaba_Igarashi.png";
     }
-    else if (Image_Id.src.match("images/Ayame_Himuro.png")) {
-        Image_Id.src = "images/RAGF_Mami_Nanami.png";
+    else if (Image_Id.src.match("images_girls/Futaba_Igarashi.png")) {
+        Image_Id.src = "images_girls/TCIAG_Carol_Olston.png";
     }
-    else if (Image_Id.src.match("images/RAGF_Mami_Nanami.png")) {
-        Image_Id.src = "images/Futaba_Igarashi.png";
+    else if (Image_Id.src.match("images_girls/TCIAG_Carol_Olston.png")) {
+        Image_Id.src = "images_girls/Kizuna_AI.png";
     }
-    else if (Image_Id.src.match("images/Futaba_Igarashi.png")) {
-        Image_Id.src = "images/TCIAG_Carol_Olston.png";
+    else if (Image_Id.src.match("images_girls/Kizuna_AI.png")) {
+        Image_Id.src = "images_girls/Hatsune_Miku.png";
     }
-    else if (Image_Id.src.match("images/TCIAG_Carol_Olston.png")) {
-        Image_Id.src = "images/Kizuna_AI.png";
+    else if (Image_Id.src.match("images_girls/Hatsune_Miku.png")) {
+        Image_Id.src = "images_girls/Kirino_Kousaka.png";
     }
-    else if (Image_Id.src.match("images/Kizuna_AI.png")) {
-        Image_Id.src = "images/Hatsune_Miku.png";
+    else if (Image_Id.src.match("images_girls/Kirino_Kousaka.png")) {
+        Image_Id.src = "images_girls/Haruhi_Suzumiya.png";
     }
-    else if (Image_Id.src.match("images/Hatsune_Miku.png")) {
-        Image_Id.src = "images/Kirino_Kousaka.png";
+    else if (Image_Id.src.match("images_girls/Haruhi_Suzumiya.png")) {
+        Image_Id.src = "images_girls/Mikuru_Asahina_tmohs.png";
     }
-    else if (Image_Id.src.match("images/Kirino_Kousaka.png")) {
-        Image_Id.src = "images/Haruhi_Suzumiya.png";
+    else if (Image_Id.src.match("images_girls/Mikuru_Asahina_tmohs.png")) {
+        Image_Id.src = "images_girls/Konata_Izumi.png";
     }
-    else if (Image_Id.src.match("images/Haruhi_Suzumiya.png")) {
-        Image_Id.src = "images/Konata_Izumi.png";
+    else if (Image_Id.src.match("images_girls/Konata_Izumi.png")) {
+        Image_Id.src = "images_girls/Miyuki_Takara_ls.png";
     }
-    else if (Image_Id.src.match("images/Konata_Izumi.png")) {
-        Image_Id.src = "images/Yazawa_Nico.png";
+    else if (Image_Id.src.match("images_girls/Miyuki_Takara_ls.png")) {
+        Image_Id.src = "images_girls/Yazawa_Nico.png";
     }
-    else if (Image_Id.src.match("images/Yazawa_Nico.png")) {
-        Image_Id.src = "images/Doki_Doki_Literrature_Club.png";
+    else if (Image_Id.src.match("images_girls/Yazawa_Nico.png")) {
+        Image_Id.src = "images_girls/Doki_Doki_Literrature_Club.png";
     }
-    else if (Image_Id.src.match("images/Doki_Doki_Literrature_Club.png")) {
-        Image_Id.src = "images/PP_Arle.png";
+    else if (Image_Id.src.match("images_girls/Doki_Doki_Literrature_Club.png")) {
+        Image_Id.src = "images_girls/Irina_Jelavic_ac.png";
     }
-    else if (Image_Id.src.match("images/PP_Arle.png")) {
-        Image_Id.src = "images/PP_Amitie.png";
+    else if (Image_Id.src.match("images_girls/Irina_Jelavic_ac.png")) {
+        Image_Id.src = "images_girls/Ritsu_ac.png";
     }
-    else if (Image_Id.src.match("images/PP_Amitie.png")) {
-        Image_Id.src = "images/splatoon_callie.png";
+    else if (Image_Id.src.match("images_girls/Ritsu_ac.png")) {
+        Image_Id.src = "images_girls/SD_CharlotteSpitz.png";
     }
-    else if (Image_Id.src.match("images/splatoon_callie.png")) {
-        Image_Id.src = "images/SD_CharlotteSpitz.png";
+    else if (Image_Id.src.match("images_girls/SD_CharlotteSpitz.png")) {
+        Image_Id.src = "images_girls/PP_Arle.png";
     }
-    else if (Image_Id.src.match("images/SD_CharlotteSpitz.png")) {
-        Image_Id.src = "images/Megumin_Konosuba.png";
+    else if (Image_Id.src.match("images_girls/PP_Arle.png")) {
+        Image_Id.src = "images_girls/PP_Amitie.png";
     }
-    else if (Image_Id.src.match("images/Megumin_Konosuba.png")) {
-        Image_Id.src = "images/Reimu_Hakurei.png";
+    else if (Image_Id.src.match("images_girls/PP_Amitie.png")) {
+        Image_Id.src = "images_girls/splatoon_callie.png";
     }
-    else if (Image_Id.src.match("images/Reimu_Hakurei.png")) {
-        Image_Id.src = "images/Marisa_Kirisame.png";
+    else if (Image_Id.src.match("images_girls/splatoon_callie.png")) {
+        Image_Id.src = "images_girls/Sailor_Moon.png";
     }
-    else if (Image_Id.src.match("images/Marisa_Kirisame.png")) {
-        Image_Id.src = "images/Koishi_Komeiji.png";
+    else if (Image_Id.src.match("images_girls/Sailor_Moon.png")) {
+        Image_Id.src = "images_girls/TMM_Zoey.png";
     }
-    else if (Image_Id.src.match("images/Koishi_Komeiji.png")) {
-        Image_Id.src = "images/Satori_Komeiji.png";
+    else if (Image_Id.src.match("images_girls/TMM_Zoey.png")) {
+        Image_Id.src = "images_girls/MD_Doremi.png";
     }
-    else if (Image_Id.src.match("images/Satori_Komeiji.png")) {
-        Image_Id.src = "images/Flandre_Scarlet.png";
+    else if (Image_Id.src.match("images_girls/MD_Doremi.png")) {
+        Image_Id.src = "images_girls/SC_Amu.png";
+    }
+    else if (Image_Id.src.match("images_girls/SC_Amu.png")) {
+        Image_Id.src = "images_girls/Sakura_Kinomoto.png";
+    }
+    else if (Image_Id.src.match("images_girls/Sakura_Kinomoto.png")) {
+        Image_Id.src = "images_girls/Kilari.png";
+    }
+    else if (Image_Id.src.match("images_girls/Kilari.png")) {
+        Image_Id.src = "images_girls/Lucie_PPP.png";
+    }
+    else if (Image_Id.src.match("images_girls/Lucie_PPP.png")) {
+        Image_Id.src = "images_girls/mkdm_tohru.png";
+    }
+    else if (Image_Id.src.match("images_girls/mkdm_tohru.png")) {
+        Image_Id.src = "images_girls/Megumin_Konosuba.png";
+    }
+    else if (Image_Id.src.match("images_girls/Megumin_Konosuba.png")) {
+        Image_Id.src = "images_girls/Reimu_Hakurei.png";
+    }
+    else if (Image_Id.src.match("images_girls/Reimu_Hakurei.png")) {
+        Image_Id.src = "images_girls/Marisa_Kirisame.png";
+    }
+    else if (Image_Id.src.match("images_girls/Marisa_Kirisame.png")) {
+        Image_Id.src = "images_girls/Koishi_Komeiji.png";
+    }
+    else if (Image_Id.src.match("images_girls/Koishi_Komeiji.png")) {
+        Image_Id.src = "images_girls/Satori_Komeiji.png";
+    }
+    else if (Image_Id.src.match("images_girls/Satori_Komeiji.png")) {
+        Image_Id.src = "images_girls/Flandre_Scarlet.png";
     }
     else {
-        Image_Id.src = "images/anime_girls_sexy.png";
+        Image_Id.src = "images_girls/anime_girls_sexy.png";
     }
 }
 /***************************************************************************************************************/
@@ -196,7 +226,7 @@ function AffichageCiel(ciel) {
 
 /***************************************************************************************************************/
 
-// Fonction permettant de changer le texte en n'importe quoi (sous-entendu une chaîne de caractère !)
+// fonction permettant de changer le texte en n'importe quoi (sous-entendu une chaîne de caractère !)
 
 function lien(elem) {
     var reponse = prompt("Veuillez saisir un truc !");
